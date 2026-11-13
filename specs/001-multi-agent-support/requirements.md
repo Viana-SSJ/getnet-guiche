@@ -45,7 +45,7 @@ As a merchant, I want answers that I can trust.
 - GIVEN the 309 FAQ questions of the site (`evals/retrieval_faq_pt.jsonl`, a holdout we did not
   write), THEN `search_kb` has the page of the question in its top 6 for 95 % or more.
 
-Proof: `test_a_number_that_no_tool_gave_goes_to_a_person`, `test_a_number_of_an_earlier_message_can_come_back`,
+Proof: `test_a_number_that_no_tool_gave_goes_to_a_person`, `test_a_number_of_an_earlier_message_can_come_back_or_be_added_up`,
 `test_knowledge_returns_its_sources`, `test_record_tool_writes_each_call_and_the_sources_come_from_the_results`,
 `test_an_agent_tool_without_its_own_tools_is_a_fallback`,
 `evals/run.py` (source check, `search_kb` for product questions, `absent_passed`), `evals/retrieval.py`
