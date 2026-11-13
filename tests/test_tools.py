@@ -72,3 +72,18 @@ def test_tools_return_an_error_instead_of_raising_when_apis_are_down(monkeypatch
     assert "error" in get_exchange_rate("EUR")
     assert "error" in get_weather("Porto Alegre", date.today().isoformat())
 
+
+def test_record_tool_writes_each_call_and_the_sources_come_from_the_results():
+    from google.adk.tools.agent_tool import AgentTool
+
+    from agents.getnet.evidence import read, record_tool, sources_of
+    from agents.getnet.knowledge import agent as knowledge
+
+    context = SimpleNamespace(state={"turn": "t1"}, agent_name="router")
+    kb = {"results": [{"title": "Pix", "url": "https://site.getnet.com.br/pix/", "text": "..."}]}
+    record_tool(SimpleNamespace(name="search_kb"), {"query": "pix"}, context, kb)
+    record_tool(AgentTool(knowledge), {"request": "pix"}, context, "Pix is free.")
+    assert [(c["tool"], c["agent"]) for c in read(context.state)] == [("router.search_kb", False), ("router.knowledge", True)]
+    assert sources_of(kb) == [{"title": "Pix", "url": "https://site.getnet.com.br/pix/"}]
+    assert sources_of({"min_c": 16, "source": "https://open-meteo.com"}) == [{"title": "https://open-meteo.com", "url": "https://open-meteo.com"}]
+    assert sources_of("Pix is free.") == []
