@@ -1,0 +1,11 @@
+.venv
+.git
+.env
+.index
+.adk
+.pytest_cache
+**/__pycache__
+evals
+tests
+specs
+ingest

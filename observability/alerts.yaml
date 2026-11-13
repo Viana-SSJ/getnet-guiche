@@ -1,0 +1,57 @@
+# Grafana alert rules over the metrics of chat.py. They show in Grafana > Alerting;
+# add a contact point there (e-mail, Slack, PagerDuty) to send them.
+apiVersion: 1
+groups:
+  - orgId: 1
+    name: getnet
+    folder: Getnet
+    interval: 1m
+    rules:
+      - uid: getnet-fallback-rate
+        title: Fallbacks above 5 % of messages
+        condition: C
+        for: 10m
+        noDataState: OK
+        execErrState: Error
+        labels: {severity: page}
+        annotations:
+          summary: More than 5 % of messages went to a person because the system failed (10 minutes).
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange: {from: 600, to: 0}
+            model:
+              refId: A
+              instant: true
+              expr: (sum(increase(chat_requests_total{fallback="true"}[10m])) or vector(0)) / sum(increase(chat_requests_total[10m]))
+          - refId: C
+            datasourceUid: __expr__
+            model:
+              refId: C
+              type: threshold
+              expression: A
+              conditions: [{evaluator: {type: gt, params: [0.05]}}]
+      - uid: getnet-latency-p95
+        title: Latency p95 above 30 s
+        condition: C
+        for: 10m
+        noDataState: OK
+        execErrState: Error
+        labels: {severity: ticket}
+        annotations:
+          summary: The p95 time to answer a message was above 30 s (10 minutes).
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange: {from: 600, to: 0}
+            model:
+              refId: A
+              instant: true
+              expr: histogram_quantile(0.95, sum by (le) (rate(chat_latency_milliseconds_bucket[10m])))
+          - refId: C
+            datasourceUid: __expr__
+            model:
+              refId: C
+              type: threshold
+              expression: A
+              conditions: [{evaluator: {type: gt, params: [30000]}}]

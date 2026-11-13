@@ -1,0 +1,54 @@
+services:
+  agents:
+    build: .
+    env_file: .env
+    environment:
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://observability:4318
+      OTEL_SERVICE_NAME: getnet-agents
+      # Sessions, tickets and the rate limit, for every replica of the API.
+      DATABASE_URL: postgresql+asyncpg://getnet:${POSTGRES_PASSWORD:-getnet}@db:5432/getnet
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      observability:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  # Not published on the host: only the API connects to it.
+  db:
+    image: postgres:17.6-alpine
+    environment:
+      POSTGRES_USER: getnet
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-getnet}
+      POSTGRES_DB: getnet
+    volumes:
+      - postgres-data:/var/lib/postgresql/data   # sessions and tickets survive a restart
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "getnet"]
+      interval: 2s
+      timeout: 3s
+      retries: 15
+    restart: unless-stopped
+
+  # Grafana, Tempo, Prometheus, Loki and an OpenTelemetry collector.
+  observability:
+    image: grafana/otel-lgtm:0.39.0
+    environment:
+      GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH: /otel-lgtm/grafana/conf/provisioning/dashboards/getnet/dashboard.json
+    volumes:
+      - ./observability/dashboard.json:/otel-lgtm/grafana/conf/provisioning/dashboards/getnet/dashboard.json:ro
+      - ./observability/dashboards.yaml:/otel-lgtm/grafana/conf/provisioning/dashboards/getnet.yaml:ro
+      - ./observability/alerts.yaml:/otel-lgtm/grafana/conf/provisioning/alerting/getnet.yaml:ro
+    ports:
+      - "3000:3000"   # Grafana
+      - "4318:4318"   # OTLP, also for `make agents` outside Docker
+
+volumes:
+  postgres-data:
