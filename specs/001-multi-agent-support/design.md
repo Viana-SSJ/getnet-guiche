@@ -265,7 +265,7 @@ of failures in the first export is seen from the next one.
 | Decision model failure | Tag `other`, no confidence; the answer is not affected |
 | Any other exception in `POST /chat` | A ticket; HTTP 200 with an empty answer and `fallback: true` |
 | An agent calls tools in a loop | After 6 calls of one agent, a tool returns an error and the model gets no tools; after 50 model calls, ADK stops the run and the fallback ticket opens |
-| The answer check stops an answer | The flow runs once more with the reason; a second stop opens the fallback ticket |
+| The answer check stops an answer, or the model returns no content (`MODEL_RETURNED_NO_CONTENT`) | The flow runs once more with the reason; a second stop opens the fallback ticket |
 | A likely prompt injection | No answer; the fallback ticket, with the reason |
 | A webhook fails | A log line; the answer is not affected |
 | No token, a wrong token, another merchant | HTTP 401, 401, 403; a session of another merchant: 404 |

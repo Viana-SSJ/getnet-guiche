@@ -153,7 +153,7 @@ over, and card, CPF and password messages; we read each answer).
 
 ## R7 Reliability
 
-- GIVEN R2 stops an answer, THEN the flow runs once more, and the router gets the reason, to get the
+- GIVEN R2 stops an answer, or the model returns no content (an empty answer), THEN the flow runs once more, and the router gets the reason, to get the
   facts again with the tools; `replanned` is true. GIVEN R2 stops the second answer too, THEN the
   fallback below.
 - GIVEN an agent reaches its tool call limit, THEN its next model call has no tools, so it writes its
@@ -168,7 +168,7 @@ over, and card, CPF and password messages; we read each answer).
 
 Proof: `test_model_failure_is_a_fallback_with_a_ticket`, `test_an_agent_tool_without_its_own_tools_is_a_fallback`,
 `test_a_number_that_no_tool_gave_goes_to_a_person` (the draft in the ticket), `test_tagger_failure_gives_other`,
-`test_a_stopped_answer_is_planned_again_once_with_the_reason`, `test_the_router_stops_after_its_call_limit`,
+`test_a_stopped_answer_is_planned_again_once_with_the_reason`, `test_a_model_that_returns_nothing_is_planned_again`, `test_the_router_stops_after_its_call_limit`,
 `test_calls_at_once_past_the_limit_get_an_error`, `evals/ablations.py wrong-number` (the replan with a
 fault that we inject).
 

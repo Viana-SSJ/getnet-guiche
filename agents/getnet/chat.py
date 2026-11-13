@@ -130,6 +130,8 @@ async def _answer(runner: Runner, user_id: str, session_id: str, message: str) -
     writer, answer = runner.plugin_manager.get_plugin("tagger").reply_author, ""
     content = types.Content(role="user", parts=[types.Part(text=message)])
     async for event in runner.run_async(user_id=user_id, session_id=session_id, new_message=content, run_config=RUN_CONFIG):
+        if event.error_code == "MODEL_RETURNED_NO_CONTENT":  # an empty answer, which the check sends to a replan
+            return ""
         if event.error_code:
             raise RuntimeError(f"{event.error_code}: {event.error_message}")
         if event.author == writer and event.is_final_response() and event.content:

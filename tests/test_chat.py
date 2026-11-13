@@ -69,7 +69,7 @@ class FakeLlm(BaseLlm):
         else:
             text = (FakeLlm.drafts.pop(0) if FakeLlm.drafts else FakeLlm.answer) if agent == "reply" else ANSWER
             part = types.Part(text=text)
-        yield LlmResponse(content=types.Content(role="model", parts=[part]))
+        yield LlmResponse(content=types.Content(role="model", parts=[part]), finish_reason=types.FinishReason.STOP)
 
 
 def fake(agent: Agent) -> Agent:
@@ -393,6 +393,12 @@ def test_a_stopped_answer_is_planned_again_once_with_the_reason(runner):
     assert any("did not reach the merchant: numbers that no tool gave: ['3,95']" in text for text in FakeLlm.seen)
     messages = asyncio.run(conversation("cliente1988", response.session_id, runner))
     assert [m["role"] for m in messages] == ["merchant", "assistant"]
+
+
+def test_a_model_that_returns_nothing_is_planned_again(runner):
+    FakeLlm.drafts = [" "]  # whitespace only: ADK marks it MODEL_RETURNED_NO_CONTENT
+    response = ask(runner)
+    assert (response.replanned, response.fallback, response.answer) == (True, False, ANSWER)
 
 
 def test_a_number_of_an_earlier_message_can_come_back_or_be_added_up(runner):
