@@ -1,0 +1,10 @@
+{"message": "What's the difference between the Get Clássica and the Get Smart?", "user_id": "cliente1988", "expect": ["knowledge"], "tag": "other"}
+{"message": "What's the weather forecast in Porto Alegre tomorrow?", "user_id": "cliente1988", "expect": ["get_weather"], "tag": "other"}
+{"message": "When will the money from yesterday's sales be deposited?", "user_id": "cliente1988", "expect": ["support"], "tag": "banking"}
+{"message": "Do I need a bank account to receive my sales via Pix?", "user_id": "cliente1988", "expect": ["knowledge"], "tag": "banking"}
+{"message": "My card machine won't connect to the internet, what should I do?", "user_id": "cliente1988", "expect": ["support"], "tag": "backoffice"}
+{"message": "How does receivables advance (antecipação) work with Getnet?", "user_id": "cliente1988", "expect": ["knowledge"], "tag": "banking"}
+{"message": "What's the euro exchange rate today?", "user_id": "cliente1988", "expect": ["get_exchange_rate"], "tag": "other"}
+{"message": "My card machine is showing a transaction decline error.", "user_id": "cliente1988", "expect": ["support"], "tag": "backoffice"}
+{"message": "How many installments can I split a sale into with the crediário?", "user_id": "cliente1988", "expect": ["knowledge"], "tag": ["banking", "other"]}
+{"message": "Can I sell through WhatsApp using the Payment Link?", "user_id": "cliente1988", "expect": ["knowledge"], "tag": ["other", "banking"]}

@@ -1,0 +1,309 @@
+{"query": "Por que a Getnet?", "expect": ["https://site.getnet.com.br/agentic-commerce/"]}
+{"query": "Dúvidas sobre cartões?", "expect": ["https://site.getnet.com.br/cartoes-aceitos/"]}
+{"query": "Como vender com o Conversor de Moedas?", "expect": ["https://site.getnet.com.br/conversor-de-moedas/"]}
+{"query": "Como insiro o Chip na minha máquina?", "expect": ["https://site.getnet.com.br/duvidas/algar/"]}
+{"query": "Quais os benefícios do Chip Algar?", "expect": ["https://site.getnet.com.br/duvidas/algar/"]}
+{"query": "O que é o Chip Algar?", "expect": ["https://site.getnet.com.br/duvidas/algar/"]}
+{"query": "Quantas tecnologias posso adquirir?", "expect": ["https://site.getnet.com.br/duvidas/aluguel-zero/"]}
+{"query": "Quais bandeiras são consideradas para compor o faturamento mínimo estipulado pela condição comercial?", "expect": ["https://site.getnet.com.br/duvidas/aluguel/"]}
+{"query": "As condições comerciais são cumulativas? O que acontecerá caso ocorra a contratação de uma nova condição comercial?", "expect": ["https://site.getnet.com.br/duvidas/aluguel/"]}
+{"query": "O que acontece caso eu não consiga cumprir as contrapartidas da condição comercial contratada?", "expect": ["https://site.getnet.com.br/duvidas/aluguel/"]}
+{"query": "O que devo fazer para receber o desconto previsto na condição comercial contratada?", "expect": ["https://site.getnet.com.br/duvidas/aluguel/"]}
+{"query": "Qual é o prazo de duração da condição comercial?", "expect": ["https://site.getnet.com.br/duvidas/aluguel/"]}
+{"query": "Caso eu opte por contratar uma condição comercial, existe alguma limitação referente a quantidade de máquinas?", "expect": ["https://site.getnet.com.br/duvidas/aluguel/"]}
+{"query": "Como faço para aderir à condição comercial que preveja desconto no aluguel da minha máquina?", "expect": ["https://site.getnet.com.br/duvidas/aluguel/"]}
+{"query": "Qual a taxa para Antecipação Automática?", "expect": ["https://site.getnet.com.br/duvidas/aluguel/"]}
+{"query": "O que é antecipação de vendas?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "O que é gravame e como ele funciona?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "O que acontece com a trava que tenho atualmente?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "O que é Cessão?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "Qual é a diferença entre Gravame e Cessão?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "O que é gravame e o que ele muda na minha forma de receber dinheiro?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "Qual é a diferença entre Gravame e Trava de Domicílio Bancário?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "O que é a RESOLUÇÃO DO BANCO CENTRAL 4734/ CIRC 3952?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "O que mudou na Antecipação?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "É possível antecipar vendas das bandeiras que habilitei?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "Qual o prazo para os valores serem lançados em conta?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "Como posso ver lançamentos futuros sendo que tenho antecipação automática?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "Quando irei receber o valor das minhas vendas?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "Quais canais posso utilizar para antecipar as vendas?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "Como saber quais vendas foram antecipadas?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "Em que horários posso consultar ou realizar a antecipação de vendas?", "expect": ["https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"]}
+{"query": "Como altero os dados cadastrais pelo Aplicativo Getnet Brasil?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet-brasil/"]}
+{"query": "Como redefinir a senha de acesso do meu Aplicativo Getnet Brasil?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet-brasil/"]}
+{"query": "Consigo visualizar minhas vendas no meu Aplicativo Getnet Brasil?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet-brasil/"]}
+{"query": "Como redefinir a senha do meu Aplicativo Getnet Brasil?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet-brasil/"]}
+{"query": "Como altero os dados cadastrais pelo Aplicativo Getnet Brasil?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet-brasil/"]}
+{"query": "Por que preciso enviar os meus documentos?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet-brasil/"]}
+{"query": "O aplicativo poderá ser baixado em qualquer smartphone?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet-brasil/"]}
+{"query": "Como baixar o Aplicativo Getnet Brasil no meu celular?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet-brasil/"]}
+{"query": "Como acesso o Aplicativo Getnet Brasil?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet-brasil/"]}
+{"query": "Como eu antecipo as minhas vendas?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet/"]}
+{"query": "Há alguma taxa extra para usar o Aplicativo Getnet Brasil?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet/"]}
+{"query": "Como faço para baixar o Aplicativo Getnet Brasil?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet/"]}
+{"query": "O que acontece se eu trocar meu smartphone ou tablet? Como devo proceder?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet/"]}
+{"query": "Como vou saber se a minha solicitação de antecipação, feita pelo Aplicativo Getnet Brasil, está em andamento ou foi efetivada?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet/"]}
+{"query": "Posso fazer a antecipação das minhas vendas? Como eu faço?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet/"]}
+{"query": "Consigo acompanhar minhas transações online?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet/"]}
+{"query": "E se não chegar a confirmação do meu cadastro por e-mail?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet/"]}
+{"query": "Consigo consultar minhas vendas?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet/"]}
+{"query": "Como efetuar o login e/ou obter a senha de acesso ao aplicativo?", "expect": ["https://site.getnet.com.br/duvidas/app-getnet/"]}
+{"query": "Qual é a taxa cobrada para os cartões de benefícios e regionais?", "expect": ["https://site.getnet.com.br/duvidas/bandeiras/"]}
+{"query": "Como eu obtenho o extrato das minhas vendas realizadas com os cartões de benefícios?", "expect": ["https://site.getnet.com.br/duvidas/bandeiras/"]}
+{"query": "Como eu altero/atualizado meu domicílio bancário?", "expect": ["https://site.getnet.com.br/duvidas/bandeiras/"]}
+{"query": "Como eu realizo a ativação para os cartões de benefícios e outras bandeiras?", "expect": ["https://site.getnet.com.br/duvidas/bandeiras/"]}
+{"query": "Como eu sei se o cartão solicitado já foi habilitado em minha maquininha?", "expect": ["https://site.getnet.com.br/duvidas/bandeiras/"]}
+{"query": "Como faço para aceitar mais bandeiras?", "expect": ["https://site.getnet.com.br/duvidas/bandeiras/"]}
+{"query": "Como o aluguel será cobrado depois do cancelamento da máquina?", "expect": ["https://site.getnet.com.br/duvidas/cancelamento-descredenciamento/"]}
+{"query": "Depois de cancelar a parceria, posso antecipar os recebíveis?", "expect": ["https://site.getnet.com.br/duvidas/cancelamento-descredenciamento/"]}
+{"query": "Quando cancelo a máquina, quanto tempo ainda posso utilizar?", "expect": ["https://site.getnet.com.br/duvidas/cancelamento-descredenciamento/"]}
+{"query": "Quero cancelar minha parceria, como faço?", "expect": ["https://site.getnet.com.br/duvidas/cancelamento-descredenciamento/"]}
+{"query": "Quando cancelo minha parceria, serei cobrado até que data?", "expect": ["https://site.getnet.com.br/duvidas/cancelamento-descredenciamento/"]}
+{"query": "Não estou cursando/não tenho o ensino superior. Posso participar?", "expect": ["https://site.getnet.com.br/duvidas/carreira/"]}
+{"query": "Qual a localidade das oportunidades?", "expect": ["https://site.getnet.com.br/duvidas/carreira/"]}
+{"query": "O processo seletivo é exclusivo para candidatura externa?", "expect": ["https://site.getnet.com.br/duvidas/carreira/"]}
+{"query": "Quem é de outra cidade, terá ajuda moradia ou ajuda de custo para mudança?", "expect": ["https://site.getnet.com.br/duvidas/carreira/"]}
+{"query": "Quem aciono em caso de dúvidas?", "expect": ["https://site.getnet.com.br/duvidas/carreira/"]}
+{"query": "Quem conduzirá o Processo Seletivo Online?", "expect": ["https://site.getnet.com.br/duvidas/carreira/"]}
+{"query": "Como é ser uma colaboradora na Getnet?", "expect": ["https://site.getnet.com.br/duvidas/carreira/"]}
+{"query": "Quais os benefícios oferecidos?", "expect": ["https://site.getnet.com.br/duvidas/carreira/"]}
+{"query": "Como faço para me inscrever?", "expect": ["https://site.getnet.com.br/duvidas/carreira/"]}
+{"query": "Como faço para gerar um cartão virtual?", "expect": ["https://site.getnet.com.br/duvidas/cartao-getnet/"]}
+{"query": "Como faço para solicitar o cartão Getnet?", "expect": ["https://site.getnet.com.br/duvidas/cartao-getnet/"]}
+{"query": "Como ativar/desbloquear o meu cartão Getnet?", "expect": ["https://site.getnet.com.br/duvidas/cartao-getnet/"]}
+{"query": "Qual a senha do meu cartão?", "expect": ["https://site.getnet.com.br/duvidas/cartao-getnet/"]}
+{"query": "Como trocar a senha do meu cartão?", "expect": ["https://site.getnet.com.br/duvidas/cartao-getnet/"]}
+{"query": "Minha senha do cartão está bloqueada. O que devo fazer?", "expect": ["https://site.getnet.com.br/duvidas/cartao-getnet/"]}
+{"query": "Onde posso realizar saques com o meu Cartão?", "expect": ["https://site.getnet.com.br/duvidas/cartao-getnet/"]}
+{"query": "Como eu contrato o Crediário e qual a taxa?", "expect": ["https://site.getnet.com.br/duvidas/crediario/"]}
+{"query": "Até quantas parcelas posso fazer e como sei os juros para informar ao meu cliente (portador do cartão)?", "expect": ["https://site.getnet.com.br/duvidas/crediario/"]}
+{"query": "Onde visualizo o pagamento e em que prazo eu recebo?", "expect": ["https://site.getnet.com.br/duvidas/crediario/"]}
+{"query": "Qualquer estabelecimento pode ter o Crediário? E se eu não quiser ter o produto?", "expect": ["https://site.getnet.com.br/duvidas/crediario/"]}
+{"query": "O que é a Getnet?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "O que é a Get Conta? Quais os benefícios?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Quem pode abrir uma Get Conta?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Como faço para abrir uma Get Conta? Preciso ter uma máquina de cartão?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Posso ter um cartão com a minha Conta?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Qual a relação da Get Conta com a instituição de pagamento Dock IP?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Como acesso a minha Get Conta?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Minha agência e conta não apareceu, o que eu faço?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Quando e como vou receber os valores das minhas vendas realizadas?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Como visualizar as minhas vendas?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Como realizo uma transferência e quais os limites diários?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Como faço para enviar dinheiro para minha Get Conta?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Quais são os meus limites diários para realizar transações?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Como cancelar a minha Get Conta?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "O que é tarifa de inatividade?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Como saber se minha conta está inativa?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Recebi a cobrança da tarifa de inatividade, o que faço?", "expect": ["https://site.getnet.com.br/duvidas/get-conta/"]}
+{"query": "Como realizo o cancelamento de uma venda da Get Smart realizada em dias anteriores?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Fiz uma venda duplicada na minha Get Smart, em menos de 5 minutos, preciso realizar o estorno?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Como proceder para que minha bateria da Get Smart se mantenha com uma boa duração?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "A Get Smart aceita pagamento com auxilio emergencial?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Como realizar pagamento por QR CODE?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Como realizar pagamento por aproximação?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Quais tipos de pagamentos são aceitos na Get Smart?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Quais bandeiras são aceitas na Get Smart?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Quais os diferenciais de uma Get Smart?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Qual tipo de negócio mais indicado para ter uma Get Smart?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "O que é a Get Smart?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Após receber a máquina, como eu começo a usar o Aplicativo que escolhi?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Como é feita a cobrança das taxas e mensalidades da Get Smart?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Como pedir uma Get Smart?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "As vendas que eu fizer na Get Smart estarão no conciliador que eu já uso?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Eu já uso uma automação no TEF. Ela estará disponível na Get Smart?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "A Get Smart imprime a Nota Fiscal Eletrônica?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "Qual a diferença entre Get Smart e TEF móvel?", "expect": ["https://site.getnet.com.br/duvidas/get-smart/"]}
+{"query": "O que é o Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "O Get Tap funciona no meu celular?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "O que é NFC e por que preciso o possuir no meu celular?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Quais os requisitos mínimos para ter o Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "É Seguro receber com o Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Qual o valor limite por venda?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Quais são as taxas do Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Quais são as bandeiras aceitas no Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Posso usar o Get Tap em mais de um celular?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Troquei de celular, como acesso o Get Tap novamente?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Como peço o Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Por que as permissões são necessárias para o Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Quais os aplicativos necessários para utilizar o Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "É preciso ter acesso a internet para utilizar o Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Quantos Get Tap posso ter?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Os clientes precisam digitar a senha nas transações?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "É emitido um comprovante de venda nas transações com o Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "O Get Tap tem mensalidade?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Em quanto tempo posso usar meu Get Tap?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Como saber qual é a versão do Android no meu celular?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Como saber se meu celular possui NFC?", "expect": ["https://site.getnet.com.br/duvidas/get-tap/"]}
+{"query": "Por que contratar uma solução da Getnet?", "expect": ["https://site.getnet.com.br/duvidas/home/"]}
+{"query": "O cliente Link de pagamento pode ter direito a recebimento D+2?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Se o cliente parar de transacionar por um período de tempo, e depois tentar gerar um Link de pagamento novamente, ele pode?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "O cliente já tem os pacotes recorrência ou loja virtual. Como ele pode usar o Link de pagamento?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "O lojista já tem Getnet no mundo físico, ele precisa ser avaliado novamente por riscos e prevenção?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Qual o SLA de atendimento para habilitação do Link de Pagamento?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Como os lojistas conseguem fazer a contratação do Link de Pagamento?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Onde o lojista consegue criar e fazer a gestão dos links gerados?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "É obrigatório o uso de antifraude para transações Link de Pagamento? Mesmo para os pacotes modulares?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "O lojista precisa ter um site ativo para poder utilizar o Link de Pagamento?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Apenas clientes pessoas jurídicas podem usar Link de Pagamento?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Quais os custos desses dois pacotes?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Em quais pacotes o Link de Pagamento está disponível?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Quais lojistas podem ter Link de Pagamento?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Quais são as formas de pagamento que o Link de Pagamento aceita?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "O seu cliente recebe comprovante?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "O que o portador do cartão verá quando receber o link?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Como o Link de Pagamento pode ser enviado?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Quais os custos pra ter um Link de Pagamento?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Por quanto tempo a antecipação do cliente fica bloqueada?", "expect": ["https://site.getnet.com.br/duvidas/link-de-pagamento/"]}
+{"query": "Quais são as taxas de adquirência da Loja Virtual?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Eu quero mudar para um plano que se adeque melhor para as minhas necessidades. Como eu faço isso?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "E quanto a mensalidade do meu plano? Como eu faço para pagar?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Quais são os planos da minestore?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Recebi as minhas chaves por e-mail. E agora?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Como eu faço para habilitar o meio de pagamento?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "O que significam as estatísticas da minha loja?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Como posso ver os detalhes dos pedidos?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Com quais aplicativos a minestore possui integração?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Quantos usuários podem ter acesso ao painel da loja?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Quero colocar as minhas redes sociais na minha loja, assim, meu cliente vai conseguir seguir as minhas páginas no face e no insta. Como eu faço isso?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Consigo configurar um domínio próprio na minestore?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Quais as formas de frete que eu consigo cadastrar na minestore?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "As taxas de adquirência da loja virtual são negociáveis?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Consigo colocar o meu logo na Loja Virtual?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Até quantos produtos eu posso cadastrar na minha loja da Minestore?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "E quantas visitas eu posso receber?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Como eu posso fazer a gestão dos meus pedidos?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "É possível fazer a gestão de estoques dos produtos que vendo na minha loja?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Eu consigo gerar relatórios de vendas para fazer o acompanhamento das minhas vendas?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Quero fazer promoções na minha loja, com descontos especiais. Consigo fazer isso na minha loja da minestore?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Quando a cobrança da mensalidade é ativada? A partir da inserção da chave de produção?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Sou cobrado se não quiser submeter um plano?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "As taxas de loja virtual podem ser negociadas?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Posso vender com boleto e/ou débito?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Não sou correntista Santander, posso ter a Loja Virtual?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "Quais os valores dos planos da loja virtual?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "O plano de mensalidade da loja virtual é descontado dos meus recebíveis?", "expect": ["https://site.getnet.com.br/duvidas/loja-digital/"]}
+{"query": "O que é Open Finance?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Quais são os benefícios do Open Finance?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Quando o Open Finance começa a funcionar?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "O que é Consentimento?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Como acompanho os Consentimentos dados e recebidos?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Quantos Consentimentos eu posso cadastrar?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Posso cancelar um Consentimento? Como faço?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "O Open Finance é seguro?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Estarei participando automaticamente do Open Finance?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "É cobrado algum valor para o compartilhamento de dados?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Por que o Open Banking passou a se chamar Open Finance?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Ainda não sou correntista de um banco, mas tenho outros tipos de produtos em instituições reguladas pelo Banco Central (por exemplo seguro, financiamento e credenciamento). Posso compartilhar dados no Open Finance?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Quem participa do Open Finance?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Quais são as fases de implementação do Open Finance?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Quem pode autorizar o compartilhamento dos meus dados?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Como funciona o compartilhamento de dados entre as instituições financeiras?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Em uma empresa com mais de um sócio, é necessária a autorização de ambos para solicitar o compartilhamento dos dados com outras instituições?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Recebi um SMS pedindo para confirmar o compartilhamento dos meus dados. O que devo fazer?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "O compartilhamento de dados terá período de vigência?", "expect": ["https://site.getnet.com.br/duvidas/mundo-open/"]}
+{"query": "Como ligo ou desligo minha máquina?", "expect": ["https://site.getnet.com.br/duvidas/operacional/"]}
+{"query": "O que é Chargeback?", "expect": ["https://site.getnet.com.br/duvidas/operacional/"]}
+{"query": "Quais relatórios consigo imprimir no POS?", "expect": ["https://site.getnet.com.br/duvidas/operacional/"]}
+{"query": "Como realizo venda digitada?", "expect": ["https://site.getnet.com.br/duvidas/operacional/"]}
+{"query": "Como realizo o estorno de uma venda?", "expect": ["https://site.getnet.com.br/duvidas/operacional/"]}
+{"query": "Como faço a reimpressão do comprovante de venda?", "expect": ["https://site.getnet.com.br/duvidas/operacional/"]}
+{"query": "Como realizo uma venda com cartão de débito ou de crédito?", "expect": ["https://site.getnet.com.br/duvidas/operacional/"]}
+{"query": "Como trocar a senha lojista?", "expect": ["https://site.getnet.com.br/duvidas/operacional/"]}
+{"query": "O que é e como funciona o Pagamento Carnê?", "expect": ["https://site.getnet.com.br/duvidas/pagamento-carne/"]}
+{"query": "Quais modalidades de Crédito Parcelado estão disponíveis na Getnet?", "expect": ["https://site.getnet.com.br/duvidas/parcelado/"]}
+{"query": "O que é o Pix? E quais as vantagens?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "O que são chaves Pix?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Como cadastrar minhas chaves na minha Get Conta?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Como fazer um Pix pela Get Conta?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Como altero meus limites de Pix pela Get Conta?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "O que é Meus Limites?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Como eu faço para consultar minhas chaves Pix?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Quando posso contestar uma transação?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "O que é MED (Mecanismo Especial de Devolução)?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "O que é portabilidade e reinvindicação de chave?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Existe algum limite de transações?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Recebi uma notificação de que minha chave foi reivindicada por outro usuário. O que devo fazer?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "O que é Pix agendado? Como faço o agendamento do Pix?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Como realizar o pagamento com QR Code?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Como adicionar um Contato de Confiança?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Como receber por QR Code?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "O que é Pix Saque e Pix Troco?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Existem taxas de Pix utilizando a Get Conta?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Como devolvo um Pix que recebi por engano?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "É possível cancelar um Pix Agendado?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Recebi um Pix e o valor está bloqueado, o que eu faço?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Recebi um Pix e o valor foi contestado pelo MED, o que eu faço?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Como faço para colocar o QR Code da Get Conta na minha maquininha?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "Tentei fazer um Pix mas no final apareceu um aviso de erro, o que eu faço?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "É possível cadastrar duas contas bancárias diferentes para o mesmo contato de confiança?", "expect": ["https://site.getnet.com.br/duvidas/pix-mais-respostas/"]}
+{"query": "O que são Chaves Pix?", "expect": ["https://site.getnet.com.br/duvidas/pix/"]}
+{"query": "Quantas chaves Pix eu devo inserir na Getnet?", "expect": ["https://site.getnet.com.br/duvidas/pix/"]}
+{"query": "Como faço para contratar o Pix na Getnet?", "expect": ["https://site.getnet.com.br/duvidas/pix/"]}
+{"query": "Como funciona o Pix na Getnet?", "expect": ["https://site.getnet.com.br/duvidas/pix/"]}
+{"query": "Quando o Pix começou a funcionar?", "expect": ["https://site.getnet.com.br/duvidas/pix/"]}
+{"query": "Fiz uma venda e não imprimiu comprovante, o que devo fazer?", "expect": ["https://site.getnet.com.br/duvidas/pix/"]}
+{"query": "O botão Pix não está disponível nos portais indicados, o que devo fazer?", "expect": ["https://site.getnet.com.br/duvidas/pix/"]}
+{"query": "Como funciona o Plano Light?", "expect": ["https://site.getnet.com.br/duvidas/plano-light/"]}
+{"query": "O que eu preciso fazer para obter o desconto nas 12 parcelas?", "expect": ["https://site.getnet.com.br/duvidas/plano-light/"]}
+{"query": "O que acontece se eu não faturar ou não atingir as outras contrapartidas da oferta?", "expect": ["https://site.getnet.com.br/duvidas/plano-light/"]}
+{"query": "O que é e como funciona a Pré-Autorização?", "expect": ["https://site.getnet.com.br/duvidas/pre-autorizacao/"]}
+{"query": "Tenho débitos e quero negociá-los, como proceder?", "expect": ["https://site.getnet.com.br/duvidas/solucao-de-dividas/"]}
+{"query": "Eu concluí a negociação, de que forma receberei meu boleto?", "expect": ["https://site.getnet.com.br/duvidas/solucao-de-dividas/"]}
+{"query": "Não concordo com as sugestões dadas de parcelamento, gostaria de negociar de outra forma, como proceder?", "expect": ["https://site.getnet.com.br/duvidas/solucao-de-dividas/"]}
+{"query": "Porque aparecem valores divididos entre Aluguel, Aluguel ADQ, Recarga, etc.?", "expect": ["https://site.getnet.com.br/duvidas/solucao-de-dividas/"]}
+{"query": "Em “Títulos”, o que significa a aba “Em aberto” e “Em andamento”?", "expect": ["https://site.getnet.com.br/duvidas/solucao-de-dividas/"]}
+{"query": "Qual menu devo acessar no Portal Recargas?", "expect": ["https://site.getnet.com.br/duvidas/solucao-de-dividas/"]}
+{"query": "Qual menu devo acessar no Portal do Cliente?", "expect": ["https://site.getnet.com.br/duvidas/solucao-de-dividas/"]}
+{"query": "O que é o Split Getnet?", "expect": ["https://site.getnet.com.br/duvidas/split-de-pagamento/"]}
+{"query": "Quais os benefícios de contratar o Split Getnet?", "expect": ["https://site.getnet.com.br/duvidas/split-de-pagamento/"]}
+{"query": "Quais as formas de pagamento que estão disponíveis?", "expect": ["https://site.getnet.com.br/duvidas/split-de-pagamento/"]}
+{"query": "Os pagamentos dos valores para o estabelecimento e os parceiros pode serem feitos para qualquer banco?", "expect": ["https://site.getnet.com.br/duvidas/split-de-pagamento/"]}
+{"query": "Como funciona o modelo gorjeta e o comissão?", "expect": ["https://site.getnet.com.br/duvidas/split-de-pagamento/"]}
+{"query": "Como o administrador/cliente cadastra seus parceiros e suas comissões?", "expect": ["https://site.getnet.com.br/duvidas/split-de-pagamento/"]}
+{"query": "Como funciona a Superdigital?", "expect": ["https://site.getnet.com.br/duvidas/superdigital/"]}
+{"query": "Quais são as taxas de adquirência da Loja Virtual?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "Já sou cliente, posso alterar as taxas das minhas máquinas Getnet?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "Qual a taxa para Antecipação Automática?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "Comprei/Aluguei uma Getnet, onde vejo as taxas do crédito parcelado?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "As taxas de adquirência da loja virtual são negociáveis?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "Qual é a taxa cobrada para os cartões de benefícios e regionais?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "As taxas de loja virtual podem ser negociadas?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "Como eu contrato o Crediário e qual a taxa?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "O plano de mensalidade da loja virtual é descontado dos meus recebíveis?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "Como é feita a cobrança das taxas e mensalidades da Get Smart?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "Há alguma taxa extra para usar o Aplicativo Getnet Brasil?", "expect": ["https://site.getnet.com.br/duvidas/taxas/"]}
+{"query": "Como faço para contratar um TEF?", "expect": ["https://site.getnet.com.br/duvidas/tef-captura-pinpad/"]}
+{"query": "O que faz o conciliador da Auttar?", "expect": ["https://site.getnet.com.br/duvidas/tef-captura-pinpad/"]}
+{"query": "O sistema de TEF não está funcionando, o que devo fazer?", "expect": ["https://site.getnet.com.br/duvidas/tef-captura-pinpad/"]}
+{"query": "Posso consultar o status de uma transação?", "expect": ["https://site.getnet.com.br/duvidas/tef-captura-pinpad/"]}
+{"query": "O que é uma venda com Cartão de Crédito Pré-Pago?", "expect": ["https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"]}
+{"query": "Como vou receber as minhas vendas pagas por um Cartão de Crédito Pré-Pago?", "expect": ["https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"]}
+{"query": "Quais as modalidades do Cartão Pré-Pago?", "expect": ["https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"]}
+{"query": "Onde acompanho as vendas feitas com Cartão Pré-Pago?", "expect": ["https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"]}
+{"query": "Quais as mudanças recentes nos recebimentos com Cartão Pré-Pago?", "expect": ["https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"]}
+{"query": "Quais os benefícios para os estabelecimentos ao receber as vendas com Cartão de Crédito Pré-Pago?", "expect": ["https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"]}
+{"query": "Qual a taxa para recebimento de vendas com Cartão de Crédito Pré-Pago?", "expect": ["https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"]}
+{"query": "Posso parcelar as vendas feitas com Cartão de Crédito Pré-Pago?", "expect": ["https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"]}
+{"query": "Qual a diferença entre Cartão de Crédito Pré-Pago e Cartão de Crédito?", "expect": ["https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"]}
+{"query": "Posso antecipar as vendas feitas com Cartão de Crédito Pré-Pago?", "expect": ["https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"]}
+{"query": "Como prefere ser atendido?", "expect": ["https://site.getnet.com.br/eye/"]}
+{"query": "O que é o arranjo aberto e arranjo fechado?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "O que é o voucher?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "O que mudou no PAT no decreto 10.854/2021?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "O que é o Decreto 12.712/2025?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "O cliente precisa fazer alguma atualização técnica na maquininha?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "Quais são as bandeiras aceitas no arranjo aberto?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "Como funciona o pagamento com cartões de benefício flexível?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "Todos os vouchers passam a ser demonstrados no extrato?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "O que acontece se eu antecipar meus recebíveis?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "O estabelecimento que já possui o extrato eletrônico precisará acionar algum canal para receber as informações no arquivo?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "Se o cliente possui algum conciliador de mercado, ele receberá os dados das transações, liquidações e antecipações referente ao PAT?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "Terá alterações na Carta Saldo referente a transações PAT?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "O que acontece se o cliente não selecionar a função correta (crédito ou voucher) na maquininha?", "expect": ["https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"]}
+{"query": "Meu celular é compatível?", "expect": ["https://site.getnet.com.br/get-tap/"]}
+{"query": "Sua solução não está aqui?", "expect": ["https://site.getnet.com.br/getstore/"]}
+{"query": "Dúvidas sobre Link de Pagamento?", "expect": ["https://site.getnet.com.br/link-de-pagamento/"]}
+{"query": "Como se tornar um parceiro?", "expect": ["https://site.getnet.com.br/parcerias/ecommerce/"]}
+{"query": "Como deseja continuar?", "expect": ["https://site.getnet.com.br/todas-as-maquininhas/"]}
+{"query": "Recebeu sua maquininha de outra pessoa?", "expect": ["https://site.getnet.com.br/todas-as-maquininhas/"]}

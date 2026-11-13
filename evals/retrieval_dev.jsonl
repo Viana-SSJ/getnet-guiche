@@ -1,0 +1,27 @@
+{"query": "Qual a duração da bateria da Get Clássica?", "expect": ["getclassica"], "expect_text": "entre 4h e 8h"}
+{"query": "O Get Tap funciona em iPhone?", "expect": ["get-tap", "gettap"]}
+{"query": "Pix na Get Conta tem taxa?", "expect": ["pix"]}
+{"query": "O que é gravame?", "expect": ["antecipacao-de-vendas"], "expect_text": "novo mecanismo que irá substituir"}
+{"query": "Como cancelar minha maquininha?", "expect": ["cancelamento"]}
+{"query": "A Get Smart tem 4G?", "expect": ["getsmart", "get-smart"]}
+{"query": "Como devolvo um Pix recebido por engano?", "expect": ["pix"]}
+{"query": "Quais bandeiras de cartão a Getnet aceita?", "expect": ["bandeiras", "cartoes-aceitos"]}
+{"query": "Como faço para habilitar o link de pagamento?", "expect": ["link-de-pagamento", "getpay"]}
+{"query": "O que é split de pagamento?", "expect": ["split"]}
+{"query": "Como trocar a bobina da maquininha?", "expect": ["manul", "manual"]}
+{"query": "Posso vender com cartão de crédito pré-pago?", "expect": ["pre-pago", "prepago"]}
+{"query": "O que é pré-autorização?", "expect": ["pre-autorizacao"]}
+{"query": "Como funciona o aluguel zero?", "expect": ["aluguel-zero"]}
+{"query": "Como pedir um empréstimo na Getnet?", "expect": ["emprestimo"]}
+{"query": "How do I receive payments in foreign currency?", "expect": ["conversor"]}
+{"query": "What is Get Tap?", "expect": ["get-tap", "gettap"]}
+{"query": "Como funcionam os pagamentos recorrentes?", "expect": ["recorrent"]}
+{"query": "Como acesso o aplicativo da Getnet?", "expect": ["app-getnet"]}
+{"query": "Qual o contato da ouvidoria?", "expect": ["ouvidoria"]}
+{"query": "Como funciona o plano light?", "expect": ["plano-light"]}
+{"query": "O que é TEF?", "expect": ["tef"]}
+{"query": "Como abrir uma Get Conta?", "expect": ["get-conta", "conta-digital", "contagetnet"]}
+{"query": "Depois de pedir o cancelamento, até quando uso a máquina?", "expect": ["cancelamento"]}
+{"query": "Posso parcelar vendas no Get Tap?", "expect": ["get-tap", "gettap"]}
+{"query": "Como funciona o pagamento de carnê na maquininha?", "expect": ["pagamento-carne"]}
+{"query": "Como configurar o Wi-Fi da Get Smart?", "expect": ["getsmart", "get-smart"]}
