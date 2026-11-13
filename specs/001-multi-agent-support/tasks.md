@@ -12,5 +12,5 @@ Each task names the requirements it serves.
 - [x] T8 Evaluation sets and runners: dev (with follow-ups, injections and questions the knowledge base cannot answer), final, retrieval, the site's FAQ as a retrieval holdout, and public attacks with normal messages for the injection limit (R1, R2, R6, R9, R13).
 - [x] T9 Faithfulness check of saved answers (the number check, the decision model, our labels) and the comparison tools: models and variants of the design, with Wilson intervals and the exact McNemar test (R15, R16).
 - [x] T10 CI: lint and offline tests on every push, the Docker image and its `/health`, the dev set when the agents change (R10).
-- [ ] T11 Run the retrieval, dev, final, faithfulness and injection evaluations, the dev set with three models and with variants of the design; keep the results in `evals/results/` (R1, R2, R8, R9, R13, R15, R16).
+- [x] T11 Run the retrieval, dev, final, faithfulness and injection evaluations, the dev set with three models and with variants of the design; keep the results in `evals/results/` (R1, R2, R8, R9, R13, R15, R16).
 - [ ] T12 README: install, run, ports, agents, memory, security, RAG pipeline, testing strategy, results; `docs/experiments.md` with each test (R10, R16).

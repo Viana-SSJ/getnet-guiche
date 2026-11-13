@@ -1,0 +1,522 @@
+{
+  "summary": {
+    "set": "evals/final.jsonl",
+    "cases": 10,
+    "passed": 10,
+    "tool_accuracy": 1.0,
+    "tag_accuracy": 1.0,
+    "empty_answers": 0,
+    "fallbacks": 0,
+    "latency_ms_p50": 11828,
+    "latency_ms_p95": 27011,
+    "model": "openrouter/deepseek/deepseek-v4-flash-0731"
+  },
+  "rows": [
+    {
+      "case": {
+        "message": "What's the difference between the Get Clássica and the Get Smart?",
+        "user_id": "cliente1988",
+        "expect": [
+          "knowledge"
+        ]
+      },
+      "reply": {
+        "answer": "Here’s the difference between the two Getnet machines:\n\n- **Get Clássica** – traditional card machine with physical buttons (clear, confirm, cancel, on/off, etc.). Supports Wi‑Fi, sales, refunds (estorno), and is activated via an activation token in the Getnet Brasil app.\n- **Get Smart** – Android‑based machine with a touchscreen. Lets you do much more directly on the device: upload your menu (cardápio), control stock, exchange messages between kitchen and dining room, close bills, issue electronic invoices (NF‑e), and integrate with your establishment’s system. It also has a Getstore with more than 100 approved apps. Comes with chip reader, magnetic stripe, contactless (NFC), 4G, Wi‑Fi and Bluetooth, plus a free 4G data chip.\n\nA couple of notes on the Get Smart: it does **not** work with recarga (top‑up), and general conciliators usually don’t reconcile its transactions — you track sales in the Getnet Brasil app or the Minha Conta portal.\n\nIn short: the **Get Clássica** is the simpler, button‑operated machine, while the **Get Smart** is the Android touchscreen machine that lets you run extra business functions (menu, stock, invoices, apps) directly on the device.\n\nIs there anything else I can help you with?",
+        "tag": "other",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "Get Smart",
+            "url": "https://site.getnet.com.br/duvidas/get-smart/"
+          },
+          {
+            "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf"
+          },
+          {
+            "title": "Manul-GetSmart.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "card_masked": false,
+        "fallback": false,
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 12123,
+        "request_id": "b3036a75479d"
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "What's the weather forecast in Porto Alegre tomorrow?",
+        "user_id": "cliente1988",
+        "expect": [
+          "get_weather"
+        ]
+      },
+      "reply": {
+        "answer": "Here's the weather forecast for Porto Alegre tomorrow (Sunday, 2026-11-08):\n\n- **Minimum:** 13.9 °C\n- **Maximum:** 20.3 °C\n- **Rain probability:** 88% — light rain showers expected\n\nSo expect a cool, rainy day. Bring an umbrella! ☔\n\nIs there anything else I can help you with, such as Getnet products or your account?",
+        "tag": "other",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "get_weather"
+        ],
+        "sources": [
+          {
+            "title": "https://open-meteo.com",
+            "url": "https://open-meteo.com"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "card_masked": false,
+        "fallback": false,
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 8067,
+        "request_id": "24f06d0e1c5d"
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "When will the money from yesterday's sales be deposited?",
+        "user_id": "cliente1988",
+        "expect": [
+          "support"
+        ]
+      },
+      "reply": {
+        "answer": "Here's the deposit schedule for yesterday's (2026-11-06) sales:\n\n| Method | Net amount | Payment date |\n|--------|-----------|--------------|\n| Pix | R$ 32.50 | 2026-11-06 (already paid) |\n| Debit | R$ 45.12 | 2026-11-09 |\n| Credit (1 installment) | R$ 116.77 | 2026-11-10 |\n| Credit (3 installments) | R$ 291.93 | 2026-11-10 |\n\n**Total net: R$ 486.32**\n\nA few notes:\n1. The Pix sale was deposited on the same day.\n2. The debit sale will be paid on 2026-11-09.\n3. Both credit sales (1-installment and 3-installment) will be paid in full on 2026-11-10, as installment credit sales are settled in 2 business days.\n\nNo ticket is needed — this was just an informational question. Let me know if you need anything else!",
+        "tag": "banking",
+        "agents_used": [
+          "support"
+        ],
+        "tools_used": [
+          "get_receivables"
+        ],
+        "sources": [],
+        "handoff": false,
+        "ticket": null,
+        "card_masked": false,
+        "fallback": false,
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 9253,
+        "request_id": "4593d98330e8"
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "Do I need a bank account to receive my sales via Pix?",
+        "user_id": "cliente1988",
+        "expect": [
+          "knowledge"
+        ]
+      },
+      "reply": {
+        "answer": "No, you don't need a traditional bank account to receive your Pix sales with Getnet. You just need a Pix key linked to a receiving account — and that account can be Getnet's own digital account.\n\nHere are your options:\n\n- **Get Conta**: a free digital account for your business (in partnership with Dock IP) where you can send and receive money, sell via Pix, and receive your sales in up to 2 business days.\n- **Superdigital**: Getnet's free digital account where you receive your sales without needing a bank account.\n\nIf you already have a bank account, you can register that account's Pix key with Getnet via the Minha Conta portal or the Getnet app.\n\nIs there anything else I can help you with?\n\nSource: Getnet knowledge base.",
+        "tag": "banking",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "ebook_pix_768x1024_16_10_v03",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2020/11/ebook_pix_768x1024_16_10_v04.pdf"
+          },
+          {
+            "title": "Getnet | Máquinas de cartão e soluções financeiras para o seu negócio",
+            "url": "https://site.getnet.com.br"
+          },
+          {
+            "title": "Superdigital",
+            "url": "https://site.getnet.com.br/duvidas/superdigital/"
+          },
+          {
+            "title": "Pix",
+            "url": "https://site.getnet.com.br/pix/"
+          },
+          {
+            "title": "Manul-GetSmart.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf"
+          },
+          {
+            "title": "Pix",
+            "url": "https://site.getnet.com.br/duvidas/pix/"
+          },
+          {
+            "title": "20260813_contrato_consolidado_versaosite.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf"
+          },
+          {
+            "title": "202403_Termo_ContaGetnet_Autocredencimento_vf.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/01/202403_Termo_ContaGetnet_Autocredencimento_vf.pdf"
+          },
+          {
+            "title": "Mais respostas sobre o Pix​",
+            "url": "https://site.getnet.com.br/duvidas/pix-mais-respostas/"
+          },
+          {
+            "title": "Get Conta",
+            "url": "https://site.getnet.com.br/duvidas/get-conta/"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "card_masked": false,
+        "fallback": false,
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 17286,
+        "request_id": "2afce95e56cc"
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "My card machine won't connect to the internet, what should I do?",
+        "user_id": "cliente1988",
+        "expect": [
+          "support"
+        ]
+      },
+      "reply": {
+        "answer": "Your Get Smart terminal is currently offline — it's set to use 4G but has no signal, and Wi-Fi isn't configured. Here's how to set up Wi-Fi on the touchscreen:\n\n1. On the home screen, tap **\"Configurar\"**.\n2. Under the configuration options, tap **Wi-Fi** to view available networks.\n3. Select your Wi-Fi network and, if needed, enter the password.\n4. The machine connects to the network.\n\nTips:\n- If the password has letters or special characters, use the machine's keyboard — each key has a number and three letters; press and hold the key until the hidden characters appear.\n- You can also manage connections under **\"Conexões\"**, where there's a **\"Teste de Conexão\"** to check everything works.\n\nAfter setting up Wi-Fi, run the connection test to confirm it's working. If it still won't connect, let me know and I'll look into it further.\n\nSource: support tool (Get Smart terminal troubleshooting).",
+        "tag": "backoffice",
+        "agents_used": [
+          "support",
+          "knowledge"
+        ],
+        "tools_used": [
+          "get_terminal_status",
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf"
+          },
+          {
+            "title": "Manul-GetSmart.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf"
+          },
+          {
+            "title": "getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/07/getnet_19_06-26_Manul_GetLite_V4-1.pdf"
+          },
+          {
+            "title": "getnet_12_06-26_Manul_GetMini_V2.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetMini_V2.pdf"
+          },
+          {
+            "title": "Manual Maquinas",
+            "url": "https://site.getnet.com.br/boas-vindas/manual-maquinas/"
+          },
+          {
+            "title": "20180711_926_Super_Manul.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2022/04/20180711_926_Super_Manul.pdf"
+          },
+          {
+            "title": "Get Smart",
+            "url": "https://site.getnet.com.br/duvidas/get-smart/"
+          },
+          {
+            "title": "Get Tap",
+            "url": "https://site.getnet.com.br/duvidas/get-tap/"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "card_masked": false,
+        "fallback": false,
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 11592,
+        "request_id": "d8ced581140b"
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "How does receivables advance (antecipação) work with Getnet?",
+        "user_id": "cliente1988",
+        "expect": [
+          "knowledge"
+        ]
+      },
+      "reply": {
+        "answer": "Here's how receivables advance (antecipação de recebíveis) works with Getnet:\n\n**What it is:** With Getnet's receivables advance, you receive the value of your credit-card sales (both à vista and parceladas) before the normal settlement date — no need to wait for the compensation period.\n\n**Availability window:** Advance is available between D+1 (one business day after the sale) and D-3 (three business days before settlement). Example: a sale on 04/03 is available to advance from 05/03; if the credit lands on 03/04, the sale can be advanced until 31/03.\n\n**Automatic advance:** If contracted, all receivables are settled on the next business day after the request.\n\n**Channels:**\n- Santander account holders: bank branch, Internet Banking, or the Getnet POS.\n- Non-Santander customers: Getnet service center (Central de Atendimento) for eventual advances, or the POS.\n\n**Checking:** The day after the advance, you can see which Mastercard/Visa sales were advanced in the Santander Portal (Extratos por período / Antecipação por período).\n\n**Rates:** The rate is the one practiced by Getnet on the date of each advance, checkable through Getnet's service channels — no fixed percentage published; varies by offer and is subject to credit approval. Automatic advance is a condition for fee exemption on the \"Receba Conforme suas Vendas\" plan. For PAT (voucher) transactions a differentiated rate may apply.\n\n**Requirements/conditions:**\n- Must meet Getnet's validation and security requirements.\n- You are responsible for the legitimacy of advanced sales — chargebacks/cancellations/estornos after advance must be reimbursed plus 1% per month interest and IGPM/FGV monetary correction.\n- Getnet can limit or suspend the advance at any time.\n- Values in the first 3 days of the financial agenda are not considered in Santander/partner operations.\n- Subject to individual credit approval.\n\nSince no fixed rate is published, I recommend confirming the current rate through Getnet's service channels.\n\nSources: Getnet knowledge base (\"Antecipação de vendas\", \"Taxas\", and the consolidated contract).",
+        "tag": "banking",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "O Programa de Alimentação do Trabalhador (PAT)",
+            "url": "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"
+          },
+          {
+            "title": "Ecommerce",
+            "url": "https://site.getnet.com.br/parcerias/ecommerce/"
+          },
+          {
+            "title": "antecipação de vendas",
+            "url": "https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"
+          },
+          {
+            "title": "Venda com cartão de crédito pré-pago",
+            "url": "https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"
+          },
+          {
+            "title": "Getnet | Cartões",
+            "url": "https://site.getnet.com.br/cartoes-aceitos/"
+          },
+          {
+            "title": "Loja Digital",
+            "url": "https://site.getnet.com.br/duvidas/loja-digital/"
+          },
+          {
+            "title": "20260813_contrato_consolidado_versaosite.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf"
+          },
+          {
+            "title": "termos_de_uso_servico_expresso_06_2025.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/06/termos_de_uso_servico_expresso_06_2025.pdf"
+          },
+          {
+            "title": "Crediário",
+            "url": "https://site.getnet.com.br/crediario/"
+          },
+          {
+            "title": "Taxas",
+            "url": "https://site.getnet.com.br/duvidas/taxas/"
+          },
+          {
+            "title": "202403_Termo_ContaGetnet_Autocredencimento_vf.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/01/202403_Termo_ContaGetnet_Autocredencimento_vf.pdf"
+          },
+          {
+            "title": "Emprestimo",
+            "url": "https://site.getnet.com.br/emprestimo/"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "card_masked": false,
+        "fallback": false,
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 18125,
+        "request_id": "8e67dd17ddb8"
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "What's the euro exchange rate today?",
+        "user_id": "cliente1988",
+        "expect": [
+          "get_exchange_rate"
+        ]
+      },
+      "reply": {
+        "answer": "The euro exchange rate today (2026-11-07) is based on the latest Banco Central do Brasil (PTAX) closing bulletin, from 2026-11-06:\n\n- **Buy rate:** R$ 6.13\n- **Sell rate:** R$ 6.1317\n- Quote time: 2026-11-06 13:06\n\nNote: rates can vary throughout the day; the bulletin is from yesterday's close.\n\nSource: Banco Central do Brasil (PTAX) closing bulletin.",
+        "tag": "other",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "get_exchange_rate"
+        ],
+        "sources": [
+          {
+            "title": "Banco Central do Brasil (PTAX)",
+            "url": null
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "card_masked": false,
+        "fallback": false,
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 7385,
+        "request_id": "13c8b58f221d"
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "My card machine is showing a transaction decline error.",
+        "user_id": "cliente1988",
+        "expect": [
+          "support"
+        ]
+      },
+      "reply": {
+        "answer": "Thanks for reaching out. I checked your Get Smart machine (serial GS-0012345) and found the issue: it's offline — no 4G signal and no Wi-Fi configured, and it's been disconnected for about 5 hours. The last error was \"communication failure with the server,\" so the decline error is most likely because the machine can't reach the network to process the sale.\n\nTo fix the connection on your Get Smart:\n\n1. On the home screen, tap \"Configurar\" to open settings.\n2. Go to \"Conexões\" and tap \"Teste de Conexão\" to run a connectivity test.\n3. Since 4G signal is \"none,\" connect to a Wi-Fi network: under Wi-Fi, view available networks and connect.\n4. If it still fails, run the \"Teste de Hardware\" (includes a Conectividade check).\n5. If the machine still shows offline, only technical support can do a system restore — please contact Getnet support for that.\n\nAbout the declined transactions: two sales were declined by the card issuers, not the machine:\n\n- Today (2026-11-07) 07:55 – R$ 18.00 (debit, Mastercard): code 05 – not authorized by the issuing bank.\n- Yesterday (2026-11-06) 17:48 – R$ 210.00 (credit, Visa): code 51 – insufficient balance/limit on the card.\n\nFor these, the cardholder must contact their card issuer (bank). Once the machine is back online, those sales can be retried.\n\nNo ticket is needed. If you'd like, I can also check your payment dates for you.\n\nSource: support tool (account/machine check).",
+        "tag": "backoffice",
+        "agents_used": [
+          "support",
+          "knowledge"
+        ],
+        "tools_used": [
+          "get_terminal_status",
+          "get_recent_transactions",
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/07/getnet_19_06-26_Manul_GetLite_V4-1.pdf"
+          },
+          {
+            "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf"
+          },
+          {
+            "title": "getnet_12_06-26_Manul_GetMini_V2.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetMini_V2.pdf"
+          },
+          {
+            "title": "20180711_926_Super_Manul.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2022/04/20180711_926_Super_Manul.pdf"
+          },
+          {
+            "title": "Manual Maquinas",
+            "url": "https://site.getnet.com.br/boas-vindas/manual-maquinas/"
+          },
+          {
+            "title": "Manul-GetSmart.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf"
+          },
+          {
+            "title": "Getnet | Maquininha POS 3G + Wi-Fi | 4020-4011",
+            "url": "https://site.getnet.com.br/maquininha/get-smart/"
+          },
+          {
+            "title": "Getnet | Maquininha de Aluguel Getnet - Garanta Aluguel ZERO",
+            "url": "https://site.getnet.com.br/maquininha/aluguel/"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "card_masked": false,
+        "fallback": false,
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 27011,
+        "request_id": "3d6144682d94"
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "How many installments can I split a sale into with the crediário?",
+        "user_id": "cliente1988",
+        "expect": [
+          "knowledge"
+        ]
+      },
+      "reply": {
+        "answer": "With the Getnet Crediário, you can split a sale into **up to 48 installments (48x)**.\n\nHowever, keep in mind:\n- The exact maximum number of installments and the contracting fees **vary depending on the customer's card-issuing bank**.\n- The customer must have available credit limit on their credit card for the **total purchase amount**.\n\nSources: \"Crediário\" page at site.getnet.com.br/crediario and \"Folder_Credirio.pdf\" – Manual de uso – Crediário Getnet.",
+        "tag": "banking",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "Crediário",
+            "url": "https://site.getnet.com.br/crediario/"
+          },
+          {
+            "title": "Getnet | Cartões",
+            "url": "https://site.getnet.com.br/cartoes-aceitos/"
+          },
+          {
+            "title": "Folder_Credirio.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2024/09/Folder_Credirio.pdf"
+          },
+          {
+            "title": "202403_Termo_ContaGetnet_Autocredencimento_vf.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/01/202403_Termo_ContaGetnet_Autocredencimento_vf.pdf"
+          },
+          {
+            "title": "20260813_contrato_consolidado_versaosite.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "card_masked": false,
+        "fallback": false,
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 10849,
+        "request_id": "c8b1804fa780"
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "Can I sell through WhatsApp using the Payment Link?",
+        "user_id": "cliente1988",
+        "expect": [
+          "knowledge"
+        ]
+      },
+      "reply": {
+        "answer": "Yes, you can sell through WhatsApp using the Getnet Payment Link (Link de Pagamento). Here’s how it works:\n\n1. Create the Payment Link in the Getnet platform/app.\n2. Copy the link and paste it into WhatsApp to share with your customer.\n3. The customer clicks the link, chooses a payment method (Pix, credit, debit, Wallet, or boleto), and completes the purchase.\n\nYou can also customize the link with product images, multiple products in the same cart, shipping cost options, and more. If you have the recurring/billing packages (Recorrência Essential or Flexible), generating the Payment Link to sell via WhatsApp is included at no additional cost.\n\nIs there anything else I can help you with?",
+        "tag": "other",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "Link de pagamento",
+            "url": "https://site.getnet.com.br/duvidas/link-de-pagamento/"
+          },
+          {
+            "title": "pd_recorrenci_essencil.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2022/05/pd_recorrenci_essencil.pdf"
+          },
+          {
+            "title": "pd_recorrenci_flexivel.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2022/05/pd_recorrenci_flexivel.pdf"
+          },
+          {
+            "title": "Getnet | Link de Pagamento: venda mais online",
+            "url": "https://site.getnet.com.br/link-de-pagamento/"
+          },
+          {
+            "title": "Getnet | Maquininha no celular: Receba pelo celular- Getnet",
+            "url": "https://site.getnet.com.br/get-tap/"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "card_masked": false,
+        "fallback": false,
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 12064,
+        "request_id": "dea045e50d35"
+      },
+      "failed": []
+    }
+  ]
+}

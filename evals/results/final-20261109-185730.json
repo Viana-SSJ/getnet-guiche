@@ -1,0 +1,1395 @@
+{
+  "summary": {
+    "set": "evals/final.jsonl",
+    "cases": 10,
+    "passed": 10,
+    "tool_accuracy": 1.0,
+    "tag_accuracy": 1.0,
+    "empty_answers": 0,
+    "fallbacks": 0,
+    "latency_ms_p50": 10554,
+    "latency_ms_p95": 19077,
+    "model": "openrouter/deepseek/deepseek-v4-flash-0731"
+  },
+  "rows": [
+    {
+      "case": {
+        "message": "What's the difference between the Get Clássica and the Get Smart?",
+        "user_id": "cliente1988",
+        "expect": [
+          "knowledge"
+        ]
+      },
+      "reply": {
+        "answer": "Thanks for reaching out! Here's the difference between the two Getnet card machines, based on the Getnet knowledge base (the \"Manual de Uso Get Clássica\" and the Get Smart FAQ/manual):\n\n**Get Clássica**\n- A traditional card machine (available in up to 4 models: S920, SP930, C680, MOVE 5000), with the same technology across them.\n- Operated with physical buttons: confirm, cancel, open the function screen, on/off, clear inserted info, advance the paper roll, and show the app version.\n- To start selling, you activate it with a token generated in the Getnet Brasil app.\n- Its manual covers: box contents, button functions, icons, payment methods, enabling the device, Wi-Fi setup, sales, refunds (estorno), app download and error solving.\n\n**Get Smart**\n- A smart Android card machine with a touchscreen, designed to run management apps directly on the device.\n- Lets you do more on the terminal itself: put the menu (cardápio), control stock, place orders, close the bill and even exchange messages between kitchen and dining room – no need for a computer or fiscal printer at the counter.\n- Hardware: touchscreen, chip reader, magnetic stripe reader, contactless (NFC), and 4G, Wi-Fi and Bluetooth connectivity; comes with a 4G chip with a free data plan.\n- On-device settings: Wi-Fi, system info, Kiosk mode, connections (Wi-Fi, 4G, Bluetooth), screen brightness and hardware tests (touch, connectivity, printing, LED, NFC, chip reader, etc.).\n- Payment conciliation in all modalities (credit, debit, crediário, QR Code or cash) with homologated management systems; sales can also be followed in the Getnet Brasil app or the Minha Conta portal.\n- Fiscal receipt (NF-e) printing depends on the app you choose – most Get Smart apps issue NF-e, but it should be validated with the app.\n\nIn short: **Get Clássica** is a simpler machine with buttons for card sales; **Get Smart** is an Android smart terminal that, besides card payments, lets you run management features (stock, orders, menu, NFC receipt) directly on the machine.\n\nIf you'd like rates or prices for either model, I can look those up for you.\n\nSources: Getnet knowledge base – \"Manual de Uso Get Clássica\" and the Get Smart FAQ/manual.",
+        "tag": "other",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf"
+          },
+          {
+            "title": "Getnet | Maquininha + Conta Digital",
+            "url": "https://site.getnet.com.br/conta-digital/"
+          },
+          {
+            "title": "Get Smart",
+            "url": "https://site.getnet.com.br/duvidas/get-smart/"
+          },
+          {
+            "title": "Manul-GetSmart.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "masked": [],
+        "fallback": false,
+        "session_id": "275229fb-27f3-4991-801d-946fe11a8d9e",
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 19077,
+        "request_id": "0943db279aac",
+        "evidence": [
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "Get Clássica maquininha diferenças"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 8 8 Índice« Manual de Uso » Get ClássicaHabilite sua Get 5. Como habilitar a minha Get Clássica? Antes de iniciar suas vendas, é preciso ativar sua maquininha. Siga o passo a passo abaixo e comece a vender! Atenção: se sua maquininha foi instalada e ativada por um técnico Getnet, você já pode realizar suas vendas. Passo 1 Ligue a sua maquininha Get Clássica. Passo 3 Pelo celular, acesse o Aplicativo Getnet Brasil com seu login e senha. Passo 4 No menu inferior do Aplicativo, clique em Serviços. Passo 2 Clique em qualquer botão. Irá aparecer uma opção para incluir o token gerado no Aplicativo. Passo 5 Selecione a opção Token de Ativação para exibir o número de token. Passo 6 Insira o número de token sua maquininha e aperte o botão Verde. Pronto! Sua maquininha já está ativa para realizar uma venda!"
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 1 Manual de Uso Get Clássica"
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 4 4 Índice« Manual de Uso » Get Clássica 2. Qual é a função de cada botão? Sua Get Clássica pode variar em até 4 modelos, mas a tecnologia será a mesma. Funções dos botões Get Clássica - S920 Limpa as informações inseridas Avança a bobina Confirma as operações da máquina Liga e desliga a máquina Cancela operações Abre a tela de função Get Clássica - SP930 Exibe a versão da aplicação Confirma as operações da máquina Liga e desliga a máquina Cancela operações Abre a tela de função Limpa as informações inseridas"
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 5 5 Índice« Manual de Uso » Get Clássica 2. Qual é a função de cada botão? Sua Get Clássica pode variar em até 4 modelos, mas a tecnologia será a mesma. Get Clássica - C680 Funções dos botões Get Clássica - MOVE 5000 Limpa as informações inseridas Exibe a versão da aplicação Confirma as operações da máquina Cancela operações Abre a tela de função Liga e desliga a máquina Limpa as informações inseridas Exibe a versão da aplicação Confirma as operações da máquina Cancela operações Abre a tela de função Liga e desliga a máquina"
+                },
+                {
+                  "title": "Getnet | Maquininha + Conta Digital",
+                  "url": "https://site.getnet.com.br/conta-digital/",
+                  "text": "# Getnet | Maquininha + Conta Digital"
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 2 Manual de Uso » Get Clássica 2 Índice Conheça sua maquininha Get Clássica 1 Conteúdo da caixa 2 Funções dos botões 3 Entenda os ícones 4 Formas de pagamento 5 Habilite sua Get 6 Configure o wi-fi 7 Comece a vender 8 Faça um estorno 9 Baixe o aplicativo 10 Solução de erros 11 Siga a Getnet 12 Entre em contato Clique nas seções acima para navegar entre os tópicos do manual."
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "Get Smart maquininha diferenças"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "Get Smart",
+                  "url": "https://site.getnet.com.br/duvidas/get-smart/",
+                  "text": "## Qual a diferença entre Get Smart e TEF móvel? Na Get Smart todas as suas vendas são processadas pela Getnet. Além disso, a Get Smart, por ser um equipamento Android, permite mais operações realizadas diretamente no equipamento, como colocar o cardápio, controlar o estoque, trocar mensagens entre cozinha e salão. #### Não é cliente? #### Já é cliente?"
+                },
+                {
+                  "title": "Manul-GetSmart.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf",
+                  "text": "## Page 4 Manual Get Smart 4 Índice«Configurações da Get Smart 02 Configurações da Get Smart Sua Get Smart oferece diversas opções de configuração diretamente na própria maquininha. Para acessá-las, basta tocar em “Configurar” na tela inicial. Confira abaixo as funcionalidades disponíveis: Wi-Fi ■ Visualize as redes disponíveis e conecte-se facilmente a uma rede Wi-Fi. Sistema ■ Consulte informações sobre o Auttar (disponível apenas para maquininhas com TEF). ■ Restaure o sistema (função restrita ao suporte técnico, com senha de acesso). Modo Quiosque ■ Ative e configure o Modo Quiosque para personalizar a experiência de uso da maquininha. Conexões ■ Gerencie suas conexões de rede: Wi-Fi, chip 4G e Bluetooth. ■ Consulte o número do chip e o número da maquininha. ■ Verifique o consumo de dados e ative o modo de economia de dados. ■ Realize testes de conectividade por meio da opção “Teste de Conexão” . Brilho da Tela ■ Ajuste o nível de brilho da tela conforme sua preferência. Teste de Hardware Execute uma série de testes para verificar o funcionamento dos componentes da maquininha. Entre os testes disponíveis estão: ■ Touchscreen ■ Conectividade ■ Data e hora ■ Impressão ■ Luzes LED ■ Câmera ■ Mifare ■ NFC ■ Leitor de tarja magnética ■ Leitor de chip ■ E outros"
+                },
+                {
+                  "title": "Get Smart",
+                  "url": "https://site.getnet.com.br/duvidas/get-smart/",
+                  "text": "## Quais os diferenciais de uma Get Smart? Com um sistema de gestão integrado ele permite que não tenha a necessidade de deslocamento para consultar um estoque, o mesmo pode ser consultado diretamente na máquina. Ele permite um balcão mais limpo, onde não é necessário ter um computador e uma impressora fiscal, ele faz ambas funções. Ele permite mais rapidez no atendimento diminuindo o tempo de espera do cliente, você pode fazer o pedido, fechar a conta e emitir o cupom fiscal tudo diretamente no terminal. Com ele você tem uma conciliação com pagamentos em todas modalidades, crédito, debito, crediário, QR Code ou dinheiro. Os sistemas de gestão homologados possuem conciliação completa."
+                },
+                {
+                  "title": "Manul-GetSmart.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf",
+                  "text": "## Page 3 Manual Get Smart 3 Índice«Principais informações 01 Principais informações O que vem na caixa O que significa cada ícone Get Smart Maquininha de cartão Getnet Carregador Carregador bivolt original da maquininha Chip 4G Com plano de dados gratuitos ■ Tela touchscreen; ■ Leitor de chip; ■ Leitor de terja magnética; ■ Leitor integrado sem-contato (NFC); ■ Comunicação 4G, Wi-Fi e Bluetooth. Principais características da Get Smart 1. Sua maquininha é bivolt; 2. Use apenas o carregador original; 3. Não use nenhum tipo de produto de limpeza, apenas um pano seco e limpo; 4. Evite exposição prolongado à luz do sol; 5. Não molhar; 6. Não deixar cair; 7. O terminal só pode ser aberto por técnicos autorizados. Cuidados Pagamento por aproximaçãoBluetooth Sinal 4GWi-fiBateria"
+                },
+                {
+                  "title": "Get Smart",
+                  "url": "https://site.getnet.com.br/duvidas/get-smart/",
+                  "text": "## O que é a Get Smart? A Get Smart é uma máquina de cartões inteligente. Com ela, seu dia a dia fica mais simples, fácil e muito mais digital. Você pode controlar o estoque, fazer pedidos, fechar conta, embarcar cardápio, emitir nota fiscal, tudo diretamente na máquina. A Get Smart permite que você integre o terminal com o sistema de seu estabelecimento e assim terá todos os aparelhos que seu negócio precisa em um único lugar."
+                },
+                {
+                  "title": "Get Smart",
+                  "url": "https://site.getnet.com.br/duvidas/get-smart/",
+                  "text": "## A Get Smart imprime a Nota Fiscal Eletrônica? Depende do Aplicativo que você escolheu. A maioria dos Aplicativos disponíveis na Get Smart emitem NF-e, mas é importante validar com o Aplicativo."
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "diferença entre Get Clássica e Get Smart"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "Get Smart",
+                  "url": "https://site.getnet.com.br/duvidas/get-smart/",
+                  "text": "## Qual a diferença entre Get Smart e TEF móvel? Na Get Smart todas as suas vendas são processadas pela Getnet. Além disso, a Get Smart, por ser um equipamento Android, permite mais operações realizadas diretamente no equipamento, como colocar o cardápio, controlar o estoque, trocar mensagens entre cozinha e salão. #### Não é cliente? #### Já é cliente?"
+                },
+                {
+                  "title": "Get Smart",
+                  "url": "https://site.getnet.com.br/duvidas/get-smart/",
+                  "text": "## Quais os diferenciais de uma Get Smart? Com um sistema de gestão integrado ele permite que não tenha a necessidade de deslocamento para consultar um estoque, o mesmo pode ser consultado diretamente na máquina. Ele permite um balcão mais limpo, onde não é necessário ter um computador e uma impressora fiscal, ele faz ambas funções. Ele permite mais rapidez no atendimento diminuindo o tempo de espera do cliente, você pode fazer o pedido, fechar a conta e emitir o cupom fiscal tudo diretamente no terminal. Com ele você tem uma conciliação com pagamentos em todas modalidades, crédito, debito, crediário, QR Code ou dinheiro. Os sistemas de gestão homologados possuem conciliação completa."
+                },
+                {
+                  "title": "Get Smart",
+                  "url": "https://site.getnet.com.br/duvidas/get-smart/",
+                  "text": "## O que é a Get Smart? A Get Smart é uma máquina de cartões inteligente. Com ela, seu dia a dia fica mais simples, fácil e muito mais digital. Você pode controlar o estoque, fazer pedidos, fechar conta, embarcar cardápio, emitir nota fiscal, tudo diretamente na máquina. A Get Smart permite que você integre o terminal com o sistema de seu estabelecimento e assim terá todos os aparelhos que seu negócio precisa em um único lugar."
+                },
+                {
+                  "title": "Get Smart",
+                  "url": "https://site.getnet.com.br/duvidas/get-smart/",
+                  "text": "## As vendas que eu fizer na Get Smart estarão no conciliador que eu já uso? Não. Os conciliadores em geral não fazem a conciliação de transações feitas na Get Smart. Mas você pode acompanhar suas vendas no Aplicativo Getnet Brasil ou no nosso Portal Minha Conta. Além disso, a maioria dos Aplicativos da Get Smart mostra um acompanhamento de vendas."
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 4 4 Índice« Manual de Uso » Get Clássica 2. Qual é a função de cada botão? Sua Get Clássica pode variar em até 4 modelos, mas a tecnologia será a mesma. Funções dos botões Get Clássica - S920 Limpa as informações inseridas Avança a bobina Confirma as operações da máquina Liga e desliga a máquina Cancela operações Abre a tela de função Get Clássica - SP930 Exibe a versão da aplicação Confirma as operações da máquina Liga e desliga a máquina Cancela operações Abre a tela de função Limpa as informações inseridas"
+                },
+                {
+                  "title": "Get Smart",
+                  "url": "https://site.getnet.com.br/duvidas/get-smart/",
+                  "text": "## A Get Smart imprime a Nota Fiscal Eletrônica? Depende do Aplicativo que você escolheu. A maioria dos Aplicativos disponíveis na Get Smart emitem NF-e, mas é importante validar com o Aplicativo."
+                }
+              ]
+            }
+          },
+          {
+            "tool": "router.knowledge",
+            "agent": true,
+            "args": {
+              "request": "Difference between Get Clássica and Get Smart card machines"
+            },
+            "result": "Here's the difference based on the Getnet knowledge base (manual \"Manual de Uso Get Clássica\" and the FAQ/manual \"Get Smart\"):\n\n**Get Clássica**\n- A traditional card machine. It can come in up to 4 models (S920, SP930, C680, MOVE 5000), but the technology is the same (Manual de Uso Get Clássica).\n- Operated with physical buttons: confirm, cancel, open the function screen, on/off, clear inserted info, advance the paper roll, and show the app version.\n- To start selling, you activate it with a token generated in the Getnet Brasil app.\n- Its manual covers: box contents, button functions, icons, payment methods, enabling the device, Wi-Fi setup, sales, refunds (estorno), app download and error solving.\n\n**Get Smart**\n- A smart Android card machine with a touchscreen, designed to run management apps directly on the device.\n- Allows more operations on the terminal itself: put the menu (cardápio), control stock, place orders, close the bill and even exchange messages between kitchen and dining room – no need for a computer or fiscal printer at the counter.\n- Hardware: touchscreen, chip reader, magnetic stripe reader, contactless (NFC), and 4G, Wi-Fi and Bluetooth connectivity; comes with a 4G chip with a free data plan.\n- On-device settings: Wi-Fi, system info, Kiosk mode, connections (Wi-Fi, 4G, Bluetooth), screen brightness and hardware tests (touch, connectivity, printing, LED, NFC, chip reader, etc.).\n- Payment conciliation in all modalities (credit, debit, crediário, QR Code or cash) with homologated management systems; sales can also be followed in the Getnet Brasil app or the Minha Conta portal.\n- Fiscal receipt (NF-e) printing depends on the app you choose – most Get Smart apps issue NF-e, but it should be validated with the app.\n\nIn short: **Get Clássica** is a simpler machine with buttons for card sales; **Get Smart** is an Android smart terminal that, besides card payments, lets you run management features (stock, orders, menu, NFC receipt) directly on the machine.\n\nIf you want rates or prices for either model, let me know — I can look those up, and note that rates and prices vary with the offer."
+          }
+        ]
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "What's the weather forecast in Porto Alegre tomorrow?",
+        "user_id": "cliente1988",
+        "expect": [
+          "get_weather"
+        ]
+      },
+      "reply": {
+        "answer": "Tomorrow (Tuesday, 2026-11-10) in Porto Alegre: clear sky, min 14.1 °C, max 26.2 °C, 0% chance of rain. Enjoy the sunshine!\n\nSource: Open-Meteo.",
+        "tag": "other",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "get_weather"
+        ],
+        "sources": [
+          {
+            "title": "https://open-meteo.com",
+            "url": "https://open-meteo.com"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "masked": [],
+        "fallback": false,
+        "session_id": "f98a85c0-8e23-49e1-8073-6571c9250d63",
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 7515,
+        "request_id": "723576f98296",
+        "evidence": [
+          {
+            "tool": "knowledge.get_weather",
+            "agent": false,
+            "args": {
+              "city": "Porto Alegre",
+              "day": "2026-11-10"
+            },
+            "result": {
+              "city": "Porto Alegre, Rio Grande do Sul, Brasil",
+              "day": "2026-11-10",
+              "min_c": 14.1,
+              "max_c": 26.2,
+              "rain_probability_pct": 0,
+              "description": "céu limpo",
+              "source": "https://open-meteo.com"
+            }
+          },
+          {
+            "tool": "router.knowledge",
+            "agent": true,
+            "args": {
+              "request": "Weather forecast in Porto Alegre tomorrow (2026-11-10)"
+            },
+            "result": "Weather forecast for Porto Alegre on 2026-11-10 (Tuesday):\n\n- **Min temperature:** 14.1 °C\n- **Max temperature:** 26.2 °C\n- **Rain probability:** 0%\n- **Condition:** clear sky (céu limpo)\n\nSource: Open-Meteo."
+          }
+        ]
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "When will the money from yesterday's sales be deposited?",
+        "user_id": "cliente1988",
+        "expect": [
+          "support"
+        ]
+      },
+      "reply": {
+        "answer": "Here's the deposit schedule for your sales made yesterday (08/11):\n\n| Payment method | Net amount | Payment date |\n|---|---|---|\n| Pix | R$ 32.50 | Already paid (08/11) |\n| Debit | R$ 45.12 | Today, 09/11 |\n| Credit (1x) | R$ 116.77 | 10/11 |\n| Credit (3x) | R$ 291.93 | 10/11 |\n\n**Total: R$ 486.32**\n\nSo:\n1. Pix was already deposited.\n2. Debit is deposited today, 09/11.\n3. Credit sales (both 1x and 3x) will be deposited tomorrow, 10/11 — installment credit sales are paid in full in 2 business days.\n\nIs there anything else I can help you with?",
+        "tag": "banking",
+        "agents_used": [
+          "support"
+        ],
+        "tools_used": [
+          "get_receivables"
+        ],
+        "sources": [],
+        "handoff": false,
+        "ticket": null,
+        "masked": [],
+        "fallback": false,
+        "session_id": "e85c90ca-ef8b-4e99-af32-67f86e14007b",
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 10065,
+        "request_id": "bff7bd9a03bb",
+        "evidence": [
+          {
+            "tool": "support.get_receivables",
+            "agent": false,
+            "args": {
+              "sale_date": "2026-11-08"
+            },
+            "result": {
+              "sale_date": "2026-11-08",
+              "account": "Get Conta",
+              "receivables": [
+                {
+                  "transaction": "T1001",
+                  "method": "debit",
+                  "installments": 1,
+                  "gross": 45.9,
+                  "fee": 0.78,
+                  "net": 45.12,
+                  "payment_date": "2026-11-09"
+                },
+                {
+                  "transaction": "T1002",
+                  "method": "credit",
+                  "installments": 1,
+                  "gross": 120.0,
+                  "fee": 3.23,
+                  "net": 116.77,
+                  "payment_date": "2026-11-10"
+                },
+                {
+                  "transaction": "T1003",
+                  "method": "credit",
+                  "installments": 3,
+                  "gross": 300.0,
+                  "fee": 8.07,
+                  "net": 291.93,
+                  "payment_date": "2026-11-10"
+                },
+                {
+                  "transaction": "T1004",
+                  "method": "pix",
+                  "installments": 1,
+                  "gross": 32.5,
+                  "fee": 0.0,
+                  "net": 32.5,
+                  "payment_date": "2026-11-08"
+                }
+              ],
+              "note": "Approved sales only. Credit sales in instalments are paid in full in 2 business days (no sales advance cost)."
+            }
+          },
+          {
+            "tool": "router.support",
+            "agent": true,
+            "args": {
+              "request": "When will the money from sales made yesterday (2026-11-08) be deposited? Payment date for the merchant's account."
+            },
+            "result": "Here are the payment dates for the approved sales made on 2026-11-08:\n\n| Payment method | Net amount | Payment date |\n|---|---|---|\n| Debit | R$ 45.12 | 2026-11-09 |\n| Credit (1x) | R$ 116.77 | 2026-11-10 |\n| Credit (3x) | R$ 291.93 | 2026-11-10 |\n| Pix | R$ 32.50 | 2026-11-08 |\n\n**Total: R$ 486.32**\n\nSummary:\n- **Pix** was already paid (2026-11-08).\n- **Debit** will be deposited today, 2026-11-09.\n- **Credit** sales (both 1x and 3x) will be deposited on 2026-11-10 — credit sales in installments are paid in full in 2 business days.\n\nIs there anything else I can help you with?"
+          }
+        ]
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "Do I need a bank account to receive my sales via Pix?",
+        "user_id": "cliente1988",
+        "expect": [
+          "knowledge"
+        ]
+      },
+      "reply": {
+        "answer": "No, you don’t need a traditional bank account to receive your Pix sales with Getnet. You have two options:\n\n1. **Superdigital** – a free digital account offered by Getnet. It includes:\n   - A prepaid international Mastercard®\n   - Withdrawals at Banco24Horas ATMs\n   - Receive and transfer money to any bank\n   - Pay bills through the app\n   - Shop online with the virtual card\n\n2. **Get Conta** – Getnet’s own account, where you can manage Pix transfers by key, QR Code, or agency/account number.\n\nYour Pix key (CPF/CNPJ, e-mail, cell phone, or a random key from the Central Bank) is linked to your account, and Getnet repasses your Pix sales to you.\n\nSource: Getnet knowledge base (Superdigital page, \"Mais respostas sobre o Pix\", consolidated contract).",
+        "tag": "banking",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "Mais respostas sobre o Pix​",
+            "url": "https://site.getnet.com.br/duvidas/pix-mais-respostas/"
+          },
+          {
+            "title": "Manul-GetSmart.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf"
+          },
+          {
+            "title": "Superdigital",
+            "url": "https://site.getnet.com.br/duvidas/superdigital/"
+          },
+          {
+            "title": "20260813_contrato_consolidado_versaosite.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf"
+          },
+          {
+            "title": "Pix",
+            "url": "https://site.getnet.com.br/pix/"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "masked": [],
+        "fallback": false,
+        "session_id": "5a3f5d26-ab85-4b5b-b9a1-efcf84f17018",
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 11043,
+        "request_id": "f256b7110f7c",
+        "evidence": [
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "preciso de conta bancária para receber vendas via Pix"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "Mais respostas sobre o Pix​",
+                  "url": "https://site.getnet.com.br/duvidas/pix-mais-respostas/",
+                  "text": "## É possível cadastrar duas contas bancárias diferentes para o mesmo contato de confiança? Sim, é possível adicionar duas contas bancárias diferentes para o mesmo contato de confiança na sua Get Conta. Para isso, siga os passos abaixo: 2. Selecione a opção \"Meus Limites\". 3. Escolha a opção \"Contato de Confiança\". 4. Selecione o contato desejado. 5. Clique na opção \"Adicionar conta\". 6. Repita os passos 4 e 5 para adicionar a segunda conta bancária. É importante lembrar que, ao adicionar duas contas bancárias diferentes para o mesmo contato de confiança, é necessário informar os dados bancários (banco, agência e conta) de cada conta. Além disso, é possível definir um limite para as transações realizadas com cada conta. A validação do Contato de Confiança tem um prazo de 48 horas. #### Não é cliente? #### Já é cliente?"
+                },
+                {
+                  "title": "Mais respostas sobre o Pix​",
+                  "url": "https://site.getnet.com.br/duvidas/pix-mais-respostas/",
+                  "text": "## O que são chaves Pix? A chave Pix é o identificador da sua conta bancária. Existem 4 tipos de chave que serão usadas pra fazer pagamentos e transferências: - CPF ou CNPJ – se for uma empresa - E-mail - Número de celular Você também pode criar uma chave aleatória, sendo um código de 32 caracteres gerado pelo Banco Central para ser vinculado à sua conta."
+                },
+                {
+                  "title": "Mais respostas sobre o Pix​",
+                  "url": "https://site.getnet.com.br/duvidas/pix-mais-respostas/",
+                  "text": "## Como fazer um Pix pela Get Conta? Ao acessar sua Get Conta, vá até a opção Pix, onde você encontrará as alternativas para realizar uma transferência via Pix: transferência com Chave, leitura de QR Code e transferência com número de agência e conta."
+                },
+                {
+                  "title": "Manul-GetSmart.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf",
+                  "text": "## Page 12 Índice« Manual Get Smart 12 Índice Canais digitais Para facilitar a gestão do seu negócio, você pode realizar as principais atividades pelo Aplicativo Getnet Brasil ou pelo Portal Minha Conta. Em ambos os canais você encontra as principais atividades do dia a dia para realizar de forma digital e segura. Canais digitais Getnet ■ Atualização dos dados cadastrais; ■ Habilitação de recebimento via Pix; ■ Extrato de vendas; ■ Cadastro de contas bancárias para recebimento; ■ Habilitação para recebimento antecipado de vendas (pontual ou automática); ■ Criar link de pagamento; ■ Solicitar novos produtos e maquininhas. São diversas funções para facilitar a gestão do seu negócio. Baixe o Aplicativo Getnet Brasil através do QR Code abaixo: Pelo Portal Minha Conta é possível realizar diversas funções e atividades: Acessar o Portal Minha Conta ↗"
+                },
+                {
+                  "title": "Mais respostas sobre o Pix​",
+                  "url": "https://site.getnet.com.br/duvidas/pix-mais-respostas/",
+                  "text": "## O que é Pix Saque e Pix Troco? A função Pix Saque permite que o cliente saque uma quantia em dinheiro utilizando o Pix. Por exemplo, o cliente vai até um estabelecimento credenciado, como uma padaria ou um mercado, e informa o valor que gostaria de sacar. O atendente gera um QR Code via Pix para o cliente escanear e, após o pagamento, dá o dinheiro em espécie para o cliente.​ Já a função Pix Troco permite que o cliente receba dinheiro em espécie como troco do pagamento digital. Por exemplo, o cliente vai até um estabelecimento credenciado, como um mercado, e faz uma compra de R$20,00. O cliente faz um Pix de R$30,00 para o estabelecimento e recebe R$10,00 em espécie como troco.​"
+                },
+                {
+                  "title": "Superdigital",
+                  "url": "https://site.getnet.com.br/duvidas/superdigital/",
+                  "text": "## Como funciona a Superdigital? Compre sua Getnet e receba o valor das suas vendas direto na Superdigital, uma conta digital grátis! A Superdigital é igual a um banco, só que mais prática. Sem precisar de uma conta bancária, você compra com o cartão pré-pago Internacional Mastercard® e saca nos caixas da Rede Banco24Horas, recebe e transfere dinheiro pra qualquer banco, paga suas contas direto pelo aplicativo e compra em sites e aplicativos com segurança com o cartão virtual. #### Não é cliente? #### Já é cliente?"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "Pix Getnet como receber vendas sem conta bancária"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "20260813_contrato_consolidado_versaosite.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf",
+                  "text": "Cliente está ciente e declara que a Getnet não será responsável pelos serviços prestados por terceiros e parceiros, incluindo qualquer atividade específica relacionada ao processamento e aprovação de Transações via Pix. 1.4. A Getnet será o Usuário Recebedor dos valores pagos via Pix pelos Usuários Pagadores do Cliente, realizando o repasse duas vezes ao dia, das quantias devidas ao Cliente pelos bens e serviços comercializados, deduzidas as tarifas e encargos aplicáveis, sendo que o fluxo de repasse poderá ser alterado a qualquer momento pela Getnet, conforme previsto neste Contrato. 2. Das informações da Conta e dados de cadastro no Sistema Getnet 2.1. O Cliente é responsável por manter atualizados os seus dados pessoais, informações cadastrais e informações da sua Conta cadastrados no Sistema Getnet, para que possa receber os valores transacionados e coletados pela Getnet por meio do Pix – Agente de Coleta. 2.1.1. Em caso de a Getnet ficar impossibilitada de efetivar a liquidação dos recebíveis por problemas cadastrais ou restrições na Conta do Cliente, a Getnet poderá fazer a desabilitação do produto para que não sejam feitas novas vendas pelo Cliente, vez que a Getnet não terá a possibilidade de efetivação do pagamento. Nesta hipótese, caberá ao Cliente efetuar o fluxo previsto nos itens (i) e (ii) da cláusula 2.1.2., referentes a rejeição, para que o Cliente receba os valores pendentes e faça vendas por meio do Pix."
+                },
+                {
+                  "title": "20260813_contrato_consolidado_versaosite.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf",
+                  "text": "instituições financeiras e de pagamento (“Instituições Parceiras”), conforme aplicável. 7.2. A prestação de serviços pela Getnet como canal Facilitador não será, em nenhuma hipótese, responsabilizada pelas Transações no Arranjo de Pagamento Pix ou pela sua liquidação financeira, estornos e cancelamentos. Caso o Cliente tenha alguma reclamação ou pleito com relação às Transações ou sua liquidação, deverá acionar diretamente a instituições financeiras e de pagamento. 7.3. O Cliente que optar por contratar o Pix – Facilitador deverá aderir aos Termos e Condições de Uso do Pix - Facilitador, reconhecendo e aceitando que a Getnet atuará como prestadora de serviços de exibição e confirmação QR Code para certas instituições financeiras e de pagamento no âmbito do Arranjo de Pagamento Pix, sendo que esta atividade inclui a coleta, captura e transmissão dos QR Codes gerados pelas instituições financeiras e de pagamento. 7.4. Ao contratar o Pix – Facilitador, o Cliente autoriza a Getnet a consultar seus dados de Agência, Conta e Chave Pix no PSP, para que sejam confirmadas as informações cadastrais e efetuada a vinculação da sua Conta, bem como para que a Getnet possa receber do PSP o status da transação Pix iniciada no seu Meio de Captura. 7.5. A Chave Pix vinculará as informações básicas às informações completas que identificam a Conta do Cliente mantida junto ao PSP (número da agência, número da Conta e tipo de Conta). Após a confirmação de que a Chave Pix é válida, o Meio de Captura já estará habilitado e os Serviços Pix poderão ser utilizados, bem como o Cliente poderá receber o valor das vendas efetuadas por meio dos Serviços Pix."
+                },
+                {
+                  "title": "Manul-GetSmart.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf",
+                  "text": "## Page 12 Índice« Manual Get Smart 12 Índice Canais digitais Para facilitar a gestão do seu negócio, você pode realizar as principais atividades pelo Aplicativo Getnet Brasil ou pelo Portal Minha Conta. Em ambos os canais você encontra as principais atividades do dia a dia para realizar de forma digital e segura. Canais digitais Getnet ■ Atualização dos dados cadastrais; ■ Habilitação de recebimento via Pix; ■ Extrato de vendas; ■ Cadastro de contas bancárias para recebimento; ■ Habilitação para recebimento antecipado de vendas (pontual ou automática); ■ Criar link de pagamento; ■ Solicitar novos produtos e maquininhas. São diversas funções para facilitar a gestão do seu negócio. Baixe o Aplicativo Getnet Brasil através do QR Code abaixo: Pelo Portal Minha Conta é possível realizar diversas funções e atividades: Acessar o Portal Minha Conta ↗"
+                },
+                {
+                  "title": "Pix",
+                  "url": "https://site.getnet.com.br/pix/",
+                  "text": "# Venda mais com Pix A Getnet tem soluções físicas e digitais para o seu negócio Maquininhas Link de pagamento Get Tap E-commerce TEF"
+                },
+                {
+                  "title": "Mais respostas sobre o Pix​",
+                  "url": "https://site.getnet.com.br/duvidas/pix-mais-respostas/",
+                  "text": "## É possível cadastrar duas contas bancárias diferentes para o mesmo contato de confiança? Sim, é possível adicionar duas contas bancárias diferentes para o mesmo contato de confiança na sua Get Conta. Para isso, siga os passos abaixo: 2. Selecione a opção \"Meus Limites\". 3. Escolha a opção \"Contato de Confiança\". 4. Selecione o contato desejado. 5. Clique na opção \"Adicionar conta\". 6. Repita os passos 4 e 5 para adicionar a segunda conta bancária. É importante lembrar que, ao adicionar duas contas bancárias diferentes para o mesmo contato de confiança, é necessário informar os dados bancários (banco, agência e conta) de cada conta. Além disso, é possível definir um limite para as transações realizadas com cada conta. A validação do Contato de Confiança tem um prazo de 48 horas. #### Não é cliente? #### Já é cliente?"
+                },
+                {
+                  "title": "Superdigital",
+                  "url": "https://site.getnet.com.br/duvidas/superdigital/",
+                  "text": "## Como funciona a Superdigital? Compre sua Getnet e receba o valor das suas vendas direto na Superdigital, uma conta digital grátis! A Superdigital é igual a um banco, só que mais prática. Sem precisar de uma conta bancária, você compra com o cartão pré-pago Internacional Mastercard® e saca nos caixas da Rede Banco24Horas, recebe e transfere dinheiro pra qualquer banco, paga suas contas direto pelo aplicativo e compra em sites e aplicativos com segurança com o cartão virtual. #### Não é cliente? #### Já é cliente?"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "router.knowledge",
+            "agent": true,
+            "args": {
+              "request": "Do I need a bank account to receive sales via Pix with Getnet?"
+            },
+            "result": "Based on the Getnet knowledge base, you do not need a traditional bank account to receive sales via Pix with Getnet. Here's what the documents say:\n\n**You can receive your Pix sales without a bank account via Superdigital:**\n- From the page \"Superdigital\" (site.getnet.com.br/duvidas/superdigital): \"Compre sua Getnet e receba o valor das suas vendas direto na Superdigital, uma conta digital grátis! A Superdigital é igual a um banco, só que mais prática. **Sem precisar de uma conta bancária**, você compra com o cartão pré-pago Internacional Mastercard® e saca nos caixas da Rede Banco24Horas, recebe e transfere dinheiro pra qualquer banco, paga suas contas direto pelo aplicativo e compra em sites e aplicativos com segurança com o cartão virtual.\"\n\n**Other relevant facts from the knowledge base:**\n- Getnet also offers its own account, the **Get Conta**, where you can manage Pix transfers (by key, QR Code, or agency/account number) — from \"Mais respostas sobre o Pix\".\n- The Pix key is the identifier of your account (CPF/CNPJ, e-mail, cell phone, or a random key generated by the Central Bank) — from \"Mais respostas sobre o Pix\".\n- In the consolidated contract (20260813_contrato_consolidado_versaosite.pdf), the Pix – Facilitador service links your Chave Pix to your account held at a financial/payment institution (PSP), and Getnet repasses the amounts of Pix sales to you.\n\nSo, in short: you can receive Pix sales without a traditional bank account — Getnet offers the free digital account Superdigital for that purpose (and also its Get Conta)."
+          }
+        ]
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "My card machine won't connect to the internet, what should I do?",
+        "user_id": "cliente1988",
+        "expect": [
+          "support"
+        ]
+      },
+      "reply": {
+        "answer": "Your Get Smart machine (serial GS-0012345) is offline — it hasn't connected for about 5 hours. Its 4G has no signal, the Wi-Fi is not configured, and the last error was a communication failure with the server. Since 4G has no signal, set up Wi-Fi:\n\n1. Tap **\"Configurar\"** on the home screen to open settings.\n2. Under **Wi-Fi**, view the available networks and select yours to connect.\n3. Go to **\"Conexões\"** and run the **\"Teste de Conexão\"** — there you can also manage your Wi-Fi, 4G chip and Bluetooth connections.\n\nIf it still won't connect after setting up Wi-Fi, I can dig further.\n\nSource: Getnet support (machine status + Get Smart manual).",
+        "tag": "backoffice",
+        "agents_used": [
+          "knowledge",
+          "support"
+        ],
+        "tools_used": [
+          "get_terminal_status",
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf"
+          },
+          {
+            "title": "Manul-GetSmart.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf"
+          },
+          {
+            "title": "getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/07/getnet_19_06-26_Manul_GetLite_V4-1.pdf"
+          },
+          {
+            "title": "getnet_12_06-26_Manul_GetMini_V2.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetMini_V2.pdf"
+          },
+          {
+            "title": "20180711_926_Super_Manul.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2022/04/20180711_926_Super_Manul.pdf"
+          },
+          {
+            "title": "Manual Maquinas",
+            "url": "https://site.getnet.com.br/boas-vindas/manual-maquinas/"
+          },
+          {
+            "title": "Getnet | Maquininha POS 3G + Wi-Fi | 4020-4011",
+            "url": "https://site.getnet.com.br/maquininha/get-smart/"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "masked": [],
+        "fallback": false,
+        "session_id": "de6afc95-ba07-4dd5-816c-fa9b27298ac5",
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 15964,
+        "request_id": "27b24118b541",
+        "evidence": [
+          {
+            "tool": "support.get_terminal_status",
+            "agent": false,
+            "args": {},
+            "result": {
+              "terminals": [
+                {
+                  "serial": "GS-0012345",
+                  "model": "Get Smart",
+                  "status": "offline",
+                  "connection": "4G",
+                  "signal": "none",
+                  "wifi_configured": false,
+                  "last_seen_hours_ago": 5,
+                  "last_error": "Falha de comunicação com o servidor"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "Get Smart configurar Wi-Fi"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 9 9 Índice« Manual de Uso » Get ClássicaConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em WI-FI ou Suporte. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "Manul-GetSmart.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf",
+                  "text": "## Page 4 Manual Get Smart 4 Índice«Configurações da Get Smart 02 Configurações da Get Smart Sua Get Smart oferece diversas opções de configuração diretamente na própria maquininha. Para acessá-las, basta tocar em “Configurar” na tela inicial. Confira abaixo as funcionalidades disponíveis: Wi-Fi ■ Visualize as redes disponíveis e conecte-se facilmente a uma rede Wi-Fi. Sistema ■ Consulte informações sobre o Auttar (disponível apenas para maquininhas com TEF). ■ Restaure o sistema (função restrita ao suporte técnico, com senha de acesso). Modo Quiosque ■ Ative e configure o Modo Quiosque para personalizar a experiência de uso da maquininha. Conexões ■ Gerencie suas conexões de rede: Wi-Fi, chip 4G e Bluetooth. ■ Consulte o número do chip e o número da maquininha. ■ Verifique o consumo de dados e ative o modo de economia de dados. ■ Realize testes de conectividade por meio da opção “Teste de Conexão” . Brilho da Tela ■ Ajuste o nível de brilho da tela conforme sua preferência. Teste de Hardware Execute uma série de testes para verificar o funcionamento dos componentes da maquininha. Entre os testes disponíveis estão: ■ Touchscreen ■ Conectividade ■ Data e hora ■ Impressão ■ Luzes LED ■ Câmera ■ Mifare ■ NFC ■ Leitor de tarja magnética ■ Leitor de chip ■ E outros"
+                },
+                {
+                  "title": "getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/07/getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+                  "text": "## Page 8 8 Índice« Manual de Uso » Get LiteConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em WI-FI ou Suporte. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetMini_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetMini_V2.pdf",
+                  "text": "## Page 8 8 Índice« Manual de Uso » Get MiniConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em Menu. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "20180711_926_Super_Manul.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2022/04/20180711_926_Super_Manul.pdf",
+                  "text": "## Page 6 DESCONECTAR § Repita os passos 1 e 2 descritos no item “Conectar” § Selecione a rede que deseja desabilitar § Pressione “1. Esquecer Rede Wi-Fi” CONECTAR § Pressione “2-Suporte” § Tecle “3. Wi-Fi” § Digite a senha da rede e aguarde a conexão PARA SUA EMPRESA PARA VOCÊ ATIVE o Wi-Fi BANDEIRAS aceitas Válido para SuperGet com Chip 3G Wi-Fi."
+                },
+                {
+                  "title": "Manual Maquinas",
+                  "url": "https://site.getnet.com.br/boas-vindas/manual-maquinas/",
+                  "text": "# Manual Maquinas Qual a sua máquina? Get Lite Portátil com Chip + Wi-Fi Get Mini Get Clássica Chip de dados + Wi-Fi Get Smart Get Renova Sem Bobina Com Bobina #### Não é cliente? #### Já é cliente?"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "Get Smart manual conexão internet Wi-Fi"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 9 9 Índice« Manual de Uso » Get ClássicaConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em WI-FI ou Suporte. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "Manul-GetSmart.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf",
+                  "text": "## Page 4 Manual Get Smart 4 Índice«Configurações da Get Smart 02 Configurações da Get Smart Sua Get Smart oferece diversas opções de configuração diretamente na própria maquininha. Para acessá-las, basta tocar em “Configurar” na tela inicial. Confira abaixo as funcionalidades disponíveis: Wi-Fi ■ Visualize as redes disponíveis e conecte-se facilmente a uma rede Wi-Fi. Sistema ■ Consulte informações sobre o Auttar (disponível apenas para maquininhas com TEF). ■ Restaure o sistema (função restrita ao suporte técnico, com senha de acesso). Modo Quiosque ■ Ative e configure o Modo Quiosque para personalizar a experiência de uso da maquininha. Conexões ■ Gerencie suas conexões de rede: Wi-Fi, chip 4G e Bluetooth. ■ Consulte o número do chip e o número da maquininha. ■ Verifique o consumo de dados e ative o modo de economia de dados. ■ Realize testes de conectividade por meio da opção “Teste de Conexão” . Brilho da Tela ■ Ajuste o nível de brilho da tela conforme sua preferência. Teste de Hardware Execute uma série de testes para verificar o funcionamento dos componentes da maquininha. Entre os testes disponíveis estão: ■ Touchscreen ■ Conectividade ■ Data e hora ■ Impressão ■ Luzes LED ■ Câmera ■ Mifare ■ NFC ■ Leitor de tarja magnética ■ Leitor de chip ■ E outros"
+                },
+                {
+                  "title": "getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/07/getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+                  "text": "## Page 8 8 Índice« Manual de Uso » Get LiteConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em WI-FI ou Suporte. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "20180711_926_Super_Manul.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2022/04/20180711_926_Super_Manul.pdf",
+                  "text": "## Page 6 DESCONECTAR § Repita os passos 1 e 2 descritos no item “Conectar” § Selecione a rede que deseja desabilitar § Pressione “1. Esquecer Rede Wi-Fi” CONECTAR § Pressione “2-Suporte” § Tecle “3. Wi-Fi” § Digite a senha da rede e aguarde a conexão PARA SUA EMPRESA PARA VOCÊ ATIVE o Wi-Fi BANDEIRAS aceitas Válido para SuperGet com Chip 3G Wi-Fi."
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetMini_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetMini_V2.pdf",
+                  "text": "## Page 8 8 Índice« Manual de Uso » Get MiniConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em Menu. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 2 Manual de Uso » Get Clássica 2 Índice Conheça sua maquininha Get Clássica 1 Conteúdo da caixa 2 Funções dos botões 3 Entenda os ícones 4 Formas de pagamento 5 Habilite sua Get 6 Configure o wi-fi 7 Comece a vender 8 Faça um estorno 9 Baixe o aplicativo 10 Solução de erros 11 Siga a Getnet 12 Entre em contato Clique nas seções acima para navegar entre os tópicos do manual."
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "Get Smart conectar rede Wi-Fi senha passos"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 9 9 Índice« Manual de Uso » Get ClássicaConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em WI-FI ou Suporte. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/07/getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+                  "text": "## Page 8 8 Índice« Manual de Uso » Get LiteConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em WI-FI ou Suporte. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "20180711_926_Super_Manul.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2022/04/20180711_926_Super_Manul.pdf",
+                  "text": "## Page 6 DESCONECTAR § Repita os passos 1 e 2 descritos no item “Conectar” § Selecione a rede que deseja desabilitar § Pressione “1. Esquecer Rede Wi-Fi” CONECTAR § Pressione “2-Suporte” § Tecle “3. Wi-Fi” § Digite a senha da rede e aguarde a conexão PARA SUA EMPRESA PARA VOCÊ ATIVE o Wi-Fi BANDEIRAS aceitas Válido para SuperGet com Chip 3G Wi-Fi."
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetMini_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetMini_V2.pdf",
+                  "text": "## Page 8 8 Índice« Manual de Uso » Get MiniConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em Menu. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "Manul-GetSmart.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf",
+                  "text": "## Page 4 Manual Get Smart 4 Índice«Configurações da Get Smart 02 Configurações da Get Smart Sua Get Smart oferece diversas opções de configuração diretamente na própria maquininha. Para acessá-las, basta tocar em “Configurar” na tela inicial. Confira abaixo as funcionalidades disponíveis: Wi-Fi ■ Visualize as redes disponíveis e conecte-se facilmente a uma rede Wi-Fi. Sistema ■ Consulte informações sobre o Auttar (disponível apenas para maquininhas com TEF). ■ Restaure o sistema (função restrita ao suporte técnico, com senha de acesso). Modo Quiosque ■ Ative e configure o Modo Quiosque para personalizar a experiência de uso da maquininha. Conexões ■ Gerencie suas conexões de rede: Wi-Fi, chip 4G e Bluetooth. ■ Consulte o número do chip e o número da maquininha. ■ Verifique o consumo de dados e ative o modo de economia de dados. ■ Realize testes de conectividade por meio da opção “Teste de Conexão” . Brilho da Tela ■ Ajuste o nível de brilho da tela conforme sua preferência. Teste de Hardware Execute uma série de testes para verificar o funcionamento dos componentes da maquininha. Entre os testes disponíveis estão: ■ Touchscreen ■ Conectividade ■ Data e hora ■ Impressão ■ Luzes LED ■ Câmera ■ Mifare ■ NFC ■ Leitor de tarja magnética ■ Leitor de chip ■ E outros"
+                },
+                {
+                  "title": "Getnet | Maquininha POS 3G + Wi-Fi | 4020-4011",
+                  "url": "https://site.getnet.com.br/maquininha/get-smart/",
+                  "text": "# Get Smart o impulso para o seu negócio Get Smart Aumente a força do seu negócio * Maquininha de cartão Grátis\\* * Conta e cartão grátis * Recebimento em 2 dias * Exclusivo para CNPJ com faturamento acima de R$10 mil/mês * Taxa única nas principais bandeiras SAIBA MAIS \\*Mediante vendas a partir de R$60.000"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "support.knowledge",
+            "agent": true,
+            "args": {
+              "request": "Get Smart: how to set up Wi-Fi"
+            },
+            "result": "Here's how to set up Wi-Fi on the **Get Smart**, based on the Get Smart manual (Manul-GetSmart.pdf):\n\n**On the Get Smart itself:**\n- Tap **\"Configurar\"** on the home screen to access the settings.\n- Under **Wi-Fi**, you can view the available networks and connect easily to a Wi-Fi network.\n- You can also manage your network connections under **Conexões** (Wi-Fi, 4G chip and Bluetooth), check data usage, enable data-saving mode, and run a **\"Teste de Conexão\"** to check connectivity.\n\n**Note:** The knowledge base's step-by-step Wi-Fi walkthrough (enable Wi-Fi → search networks → select your network → enter password) is documented for the Get Clássica, Get Lite, Get Mini and SuperGet models, not specifically for the Get Smart. For the Get Smart, the manual describes the Wi-Fi setup as above — tap \"Configurar\" and connect via the Wi-Fi option.\n\nSources:\n- \"Manul-GetSmart.pdf\" (Manual Get Smart, page 4) – site.getnet.com.br\n- \"Manual Maquinas\" – site.getnet.com.br/boas-vindas/manual-maquinas/\n\nIf you'd like, I can also share the step-by-step Wi-Fi instructions for the other Get models."
+          },
+          {
+            "tool": "router.support",
+            "agent": true,
+            "args": {
+              "request": "My card machine won't connect to the internet. What should I do?"
+            },
+            "result": "I checked your machine's status. Here's what I found and what to do.\n\n**Your machine's status (Get Smart, serial GS-0012345):**\n- Status: **offline** (not seen for about 5 hours)\n- Connection: 4G — **no signal**\n- Wi-Fi: **not configured**\n- Last error: communication failure with the server\n\nSince your 4G has no signal, connecting to Wi-Fi is a good next step. Here are the steps for the **Get Smart** (from its manual):\n\n1. Tap **\"Configurar\"** on the home screen to open the settings.\n2. Under **Wi-Fi**, view the available networks and select yours to connect.\n3. To check everything is working, go to **\"Conexões\"** and run the **\"Teste de Conexão\"** — there you can also manage your Wi-Fi, 4G chip and Bluetooth connections.\n\nIf you still can't connect after setting up Wi-Fi, let me know and I'll dig further."
+          }
+        ]
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "How does receivables advance (antecipação) work with Getnet?",
+        "user_id": "cliente1988",
+        "expect": [
+          "knowledge"
+        ]
+      },
+      "reply": {
+        "answer": "Here's how receivables advance (antecipação de vendas) works with Getnet:\n\n**What it is:** You receive, in advance, the amounts of your credit sales (à vista or parceladas), without waiting for the usual compensation period.\n\n**How to contract it:**\n1. **Occasional (pontual):** directly on the machine or via Getnet service channels.\n2. **Automatic (automática):** when joining Getnet or later via the Portal, App or other channels — as long as your receivables haven't already been advanced. With automatic antecipação, all receivables are settled on the **first business day after the request**, and you can cancel it anytime (cancellation doesn't cover receivables already processed for early payment).\n\n**Rates:** The rate is the one practiced by Getnet on the date of each antecipação — it's not fixed and can vary, so I can't quote a percentage. You can check the current rate in the Getnet App, Client Portal or by calling 4002-4000 before contracting.\n\n**Important notes:** In case of chargebacks, cancellations or stornos after the antecipação, you must reimburse Getnet, plus interest of 1% per month and monetary correction by IGPM/FGV. Automatic antecipação may be subject to individual credit approval by Getnet and can be limited or suspended at any time without prior notice.\n\nWould you like to know anything else — for example, about how to activate antecipação on your own machine or check rates for your account? I can help with that.",
+        "tag": "banking",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "O Programa de Alimentação do Trabalhador (PAT)",
+            "url": "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"
+          },
+          {
+            "title": "Getnet | Cartões",
+            "url": "https://site.getnet.com.br/cartoes-aceitos/"
+          },
+          {
+            "title": "Venda com cartão de crédito pré-pago",
+            "url": "https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/"
+          },
+          {
+            "title": "Loja Digital",
+            "url": "https://site.getnet.com.br/duvidas/loja-digital/"
+          },
+          {
+            "title": "antecipação de vendas",
+            "url": "https://site.getnet.com.br/duvidas/antecipacao-de-vendas/"
+          },
+          {
+            "title": "20260813_contrato_consolidado_versaosite.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf"
+          },
+          {
+            "title": "Taxas",
+            "url": "https://site.getnet.com.br/duvidas/taxas/"
+          },
+          {
+            "title": "Getnet | Maquininha de Aluguel Getnet - Garanta Aluguel ZERO",
+            "url": "https://site.getnet.com.br/maquininha/aluguel/"
+          },
+          {
+            "title": "Aluguel",
+            "url": "https://site.getnet.com.br/duvidas/aluguel/"
+          },
+          {
+            "title": "Crediário",
+            "url": "https://site.getnet.com.br/crediario/"
+          },
+          {
+            "title": "Getnet | Split de Pagamento Getnet | Divisão Automática de Recebimentos",
+            "url": "https://site.getnet.com.br/split/"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "masked": [],
+        "fallback": false,
+        "session_id": "7ac609fe-3dce-4846-8e66-328531f66fc4",
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 12527,
+        "request_id": "3d9a6cc3771b",
+        "evidence": [
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "antecipação de recebíveis como funciona condições taxas"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "O Programa de Alimentação do Trabalhador (PAT)",
+                  "url": "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+                  "text": "## O que acontece se eu antecipar meus recebíveis? 1. Caso você antecipe seus recebíveis, será aplicada uma taxa diferenciada."
+                },
+                {
+                  "title": "Getnet | Cartões",
+                  "url": "https://site.getnet.com.br/cartoes-aceitos/",
+                  "text": "## Conheça as mudanças no PAT (Programa de Alimentação do Trabalhador) * Foi publicado em novembro de 2025 uma nova regra para o Programa de Alimentação do Trabalhador, que muda como funcionam as transações de vale alimentação e vale refeição no mercado * O objetivo é aumentar a concorrência, padronizar regras e facilitar a aceitação dos cartões * O prazo máximo de recebimento das vendas passará a ser de 15 dias * A taxa de MDR será limitada a 3,6% * Caso você antecipe seus recebíveis, a taxa permanece a mesma do crédito \\*\\*Todas essas condições serão aplicadas somente nas transações realizadas na função voucher\\*\\*"
+                },
+                {
+                  "title": "Venda com cartão de crédito pré-pago",
+                  "url": "https://site.getnet.com.br/duvidas/venda-com-cartao-de-credito-pre-pago/",
+                  "text": "## Qual a taxa para recebimento de vendas com Cartão de Crédito Pré-Pago? Atualmente, as taxas são as mesmas estabelecidas na contratação da maquininha ou link de pagamento, na modalidade de recebimento no cartão de crédito em 1 vez. As taxas são sujeitas a alteração de acordo com as condições dos produtos e serviços contratados."
+                },
+                {
+                  "title": "Loja Digital",
+                  "url": "https://site.getnet.com.br/duvidas/loja-digital/",
+                  "text": "## Quando a cobrança da mensalidade é ativada? A partir da inserção da chave de produção? A cobrança é ativada a partir do upgrade do plano realizado no painel administrativo da Loja Digital. Os planos são contratados na modalidade pré-pago podendo o cliente optar entre as seguintes formas de pagamento: **Cartão de Crédito** - A forma mais prática, pois o pagamento do seu plano será processado todo mês automaticamente. Aceitamos VISA ou Mastercard. **Boleto Bancário** - Será gerado um boleto alguns dias antes do vencimento de sua mensalidade."
+                },
+                {
+                  "title": "antecipação de vendas",
+                  "url": "https://site.getnet.com.br/duvidas/antecipacao-de-vendas/",
+                  "text": "## O que é gravame e como ele funciona? Gravame é o nome do novo mecanismo que irá substituir a Trava de Domicílio Bancário. Na prática, o funcionamento é muito semelhante ao que já temos hoje: Ao realizar uma negociação/contrato de crédito com uma Instituição Financeira (banco) utilizando os seus recebíveis, o seu fluxo/agenda de recebíveis será direcionado ao banco para garantir a operação feita."
+                },
+                {
+                  "title": "20260813_contrato_consolidado_versaosite.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf",
+                  "text": "Reserva de Recebíveis do Cliente, que seja suficiente para garantir o cumprimento das obrig ações do Cliente, a sua própria Agenda Financeira de recebíveis futuros será utilizada para cumprir o disposto na Cláusula de Garantias do Contrato. 3.3. O valor definido como Reserva de Recebíveis, acima, será atualizado diariamente, com base na Agenda Financeira futura de recebíveis do Cliente, preferivelmente, a partir das agendas com prazo de vencimento superior a 90 (noventa) dias, se existente. 3.4. A alteração do percentual e do montante da Reserva de Recebíveis dada em garantia pelo Cliente, poderá sofrer alterações, sem aviso prévio, se . 3.5. A garantia de Reserva da Recebíveis deverá permanecer válida durante todo o período de vigência do presente Contrato, inclusive após o seu término, enquanto existirem obrigações a serem cumpridas pelo Cliente. 4. Carta de Fiança Bancária"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "antecipação de recebíveis Getnet taxas"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "20260813_contrato_consolidado_versaosite.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf",
+                  "text": "antecipação praticada pela Getnet na data de cada antecipação, a qual poderá ser consultada pelo Cliente nos Canais de Atendimento Getnet. 18.8. O Cliente poderá solicitar o cancelamento da Antecipação de Recebíveis automática a qualquer momento. Nesta hipótese, o cancelamento não abrangerá os recebíveis já processados para pagamento antecipado. 18.9. A Getnet poderá limitar ou suspender a contratação da Antecipação de Recebíveis, a qualquer momento, sem aviso prévio. 18.10. Para formalização e eficácia da Antecipação de Recebíveis, o Cliente deverá atender a todos os requisitos de validação e segurança solicitados pela Getnet, como digitação de senhas e/ou confirmação de dados do Cliente e do usuário solicitante, se for o cas o, bem como da ciência e autorização para gravações telefônicas ou outros meios que se julgar necessário para a formalização da operação. 18.11. O Cliente desde já reconhece e aceita que é responsável pela legitimidade das vendas realizadas e antecipadas pela Getnet, sendo responsável ainda pelos débitos, estornos, cancelamentos ocorridos mesmo após a formalização da Antecipação de Recebíveis, devendo, nesta hipótese, ressarcir a Getnet de tais valores, acrescidos de juros de 1% ao mês e correção monetária pela variação positiva do IGPM/FGV ou outro índice que vier a substituí-lo, os quais poderão ser deduzidos da Agenda Financeira ou debitados de seu Domicílio Bancário ou cobrados por m eio de boleto bancário, e demais formas de cobrança previstas neste Contrato. 18.12. O Cliente autoriza a Getnet a compartilhar com os demais participantes da Bandeira e com as Entidades Registradoras, as informações da Antecipação de Recebíveis contratada no âmbito dos Serviços de Adquirência Getnet."
+                },
+                {
+                  "title": "20260813_contrato_consolidado_versaosite.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf",
+                  "text": "## Page 30 Contrato de Credenciamento aos Serviços Getnet e Outras Avenças 18.13. Uma vez registrada a operação de antecipação de recebíveis na Entidade Registradora e com a Câmara de Compensação e Liquidação, a Getnet creditará o valor antecipado de acordo com as regras e condições do Acordo Comercial ou do Convênio, servindo o lançame nto a crédito como plena, geral e irrevogável quitação à Getnet. 18.14. Em caso da Getnet ter efetuado o pagamento da transação por antecipação ou não, e posteriormente ser constatada qualquer irregularidade, o Cliente desde já autoriza a Getnet a requerer à instituição financeira detentora do Domicílio Bancário do Cliente, o débito do valor total ou parcial devido, e se insuficiente o saldo em sua conta, a emissão de boleto bancário para pagamento e demais formas de cobrança prevista neste Contrato. 19. Cláusula Décima Nona – Negociação de Recebíveis 19.1. Caso o Cliente realize uma Negociação de Recebíveis com uma Instituição Financeira ou não Financeira, todas as condições serão negociadas diretamente pelo Cliente com a Instituição Financeira ou não Financeira, cabendo à Getnet somente a liquidação das Transações no Domicílio Bancário do Cliente que constar na Entidade Registradora. 19.1.1. Na hipótese de o Cliente optar pela Negociação de Recebíveis com o Banco Santander ou qualquer Instituição Parceira, a operação poderá ser contratada por meio dos Canais de Atendimento da Getnet. Neste caso, os recebíveis do Cliente serão cedidos ao Banco Santander ou à Instituição Parceira da Getnet em conformidade com as regras e condições previstas"
+                },
+                {
+                  "title": "O Programa de Alimentação do Trabalhador (PAT)",
+                  "url": "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+                  "text": "## O que acontece se eu antecipar meus recebíveis? 1. Caso você antecipe seus recebíveis, será aplicada uma taxa diferenciada."
+                },
+                {
+                  "title": "Taxas",
+                  "url": "https://site.getnet.com.br/duvidas/taxas/",
+                  "text": "## Já sou cliente, posso alterar as taxas das minhas máquinas Getnet? Sim, você pode solicitar a alteração das taxas nos canais da Getnet: * Aplicativo da Getnet; * Portal do Cliente – para contratação de máquina adicional (aluguel ou compra); * Central de Relacionamento Getnet, por meio do telefone 4002-4000 e realizar a solicitação."
+                },
+                {
+                  "title": "20260813_contrato_consolidado_versaosite.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/09/20260813_contrato_consolidado_versaosite.pdf",
+                  "text": "## Page 29 Contrato de Credenciamento aos Serviços Getnet e Outras Avenças Santander ou qualquer Instituição Parceira, a antecipação poderá ser contratada por meio dos Canais da Getnet. Neste caso, os recebíveis do Cliente serão cedidos ao Banco Santander ou à Instituição Parceira da Getnet em conformidade com as regras e condições previstas nas Condições Gerais de Cessão de Crédito de Recebíveis de Cartões de Crédito que serão apresent adas e aderidas pelo Cliente ou outro documento que venha a ser formalizado com o Cliente. 18.5. Nas operações de AR realizadas em parceira com o Banco Santander e Instituição Parceira, não serão considerados os valores constantes nos 3 (três) primeiros dias da Agenda Financeira do Cliente. 18.6. O Cliente poderá contratar a AR de forma eventual diretamente nos Meios de Captura ou nos Canais de Atendimento informados. A Antecipação de Recebíveis na forma automática poderá ser contratada na adesão aos Serviços de Adquirência Getnet ou posteriormente por meio do Portal, Aplicativo ou demais Canais, desde que os recebíveis não tenham sido anteriormente antecipados na modalidade do “Receba Já” ou contratados de outra forma que os tornem indisponíveis para o AR. 18.7. Se o Cliente contratar o AR na forma automática, todos os recebíveis de titularidade do Cliente no âmbito do Sistema Getnet serão liquidados no dia útil seguinte à solicitação. Será aplicada a taxa de antecipação praticada pela Getnet na data de cada antecipação, a qual poderá ser consultada pelo Cliente nos Canais de Atendimento Getnet. 18.8. O Cliente poderá"
+                },
+                {
+                  "title": "Getnet | Maquininha de Aluguel Getnet - Garanta Aluguel ZERO",
+                  "url": "https://site.getnet.com.br/maquininha/aluguel/",
+                  "text": "e débito pré-pago em até 1 dia útil. Taxas sujeitas a alteração de acordo com as condições dos produtos e serviços contratados. Aceite as principais bandeiras e carteiras digitais"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "Receba Já antecipação automática taxa como funciona"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "Taxas",
+                  "url": "https://site.getnet.com.br/duvidas/taxas/",
+                  "text": "## Qual a taxa para Antecipação Automática? A Antecipação Automática é uma condição para obtenção da isenção em clientes que optam pelo plano de recebimento ‘Receba Conforme suas Vendas’. Por tratar-se de um processo de aprovação de crédito, a Getnet reserva-se o direito de avaliar individualmente cada contrato na concessão (ou não) do produto Antecipação Automática."
+                },
+                {
+                  "title": "antecipação de vendas",
+                  "url": "https://site.getnet.com.br/duvidas/antecipacao-de-vendas/",
+                  "text": "## O que é antecipação de vendas? O cliente pode receber antecipadamente os valores das vendas realizadas na função de crédito, sejam à vista ou parceladas. Ou seja, o cliente, não precisará aguardar até o prazo de compensação para receber em sua conta o valor das vendas realizadas na maquininha."
+                },
+                {
+                  "title": "Loja Digital",
+                  "url": "https://site.getnet.com.br/duvidas/loja-digital/",
+                  "text": "## Quando a cobrança da mensalidade é ativada? A partir da inserção da chave de produção? A cobrança é ativada a partir do upgrade do plano realizado no painel administrativo da Loja Digital. Os planos são contratados na modalidade pré-pago podendo o cliente optar entre as seguintes formas de pagamento: **Cartão de Crédito** - A forma mais prática, pois o pagamento do seu plano será processado todo mês automaticamente. Aceitamos VISA ou Mastercard. **Boleto Bancário** - Será gerado um boleto alguns dias antes do vencimento de sua mensalidade."
+                },
+                {
+                  "title": "Aluguel",
+                  "url": "https://site.getnet.com.br/duvidas/aluguel/",
+                  "text": "## Qual a taxa para Antecipação Automática? A Antecipação Automática é uma condição para obtenção da isenção em clientes que optam pelo plano de recebimento ‘Receba Conforme suas Vendas’. Por tratar-se de um processo de aprovação de crédito, a Getnet reserva-se o direito de avaliar individualmente cada contrato na concessão (ou não) do produto Antecipação Automática. #### Não é cliente? #### Já é cliente?"
+                },
+                {
+                  "title": "Crediário",
+                  "url": "https://site.getnet.com.br/crediario/",
+                  "text": "crediário. É possível também a impressão do comprovante da simulação na maquininha com bobina, assim o cliente conseguirá avaliar os juros e o valor final da compra. Lembrando que a simulação é apenas para consulta, sendo sujeita a análise de crédito, portanto, cabe ao emissor do cartão aprovar a transação no momento da contratação. * #### Onde visualizo o pagamento e em que prazo eu recebo? As informações de pagamento podem ser consultadas no Aplicativo Getnet (Vendas) e/ou no Portal do Cliente. Todas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador. Lembrando que do valor da transação original é subtraído o valor da taxa de desconto. * #### Qualquer estabelecimento pode ter o Crediário? E se eu não quiser ter o produto? A habilitação do produto Crediário está sujeita à análise pela Getnet. Caso você não deseje ter o Crediário como mais uma opção de pagamento, basta entrar em contato com a Central de Atendimento da Getnet e solicitar a desabilitação desta modalidade. ainda tem **dúvidas?** #### Não é cliente? #### Já é cliente?"
+                },
+                {
+                  "title": "Getnet | Split de Pagamento Getnet | Divisão Automática de Recebimentos",
+                  "url": "https://site.getnet.com.br/split/",
+                  "text": "## Confira como funciona o Split de pagamento Realize um único pagamento: o valor é automaticamente separado e distribuído entre todos os envolvidos."
+                }
+              ]
+            }
+          },
+          {
+            "tool": "router.knowledge",
+            "agent": true,
+            "args": {
+              "request": "How does receivables advance (antecipação de recebíveis) work with Getnet? Conditions, rates, how it works"
+            },
+            "result": "Here's how receivables advance (antecipação de recebíveis) works with Getnet, based on the knowledge base:\n\n## What it is\nWith antecipação de vendas, the merchant receives in advance the amounts of sales made in the credit function (à vista or parceladas), without having to wait for the usual compensation period to receive the money. *(Source: \"O que é antecipação de vendas?\" – site.getnet.com.br/duvidas/antecipacao-de-vendas/)*\n\n## How it is contracted (from the Getnet Credenciamento contract, clause 18)\n- **Occasional form**: you can contract it directly in the capture devices (maquininha) or Getnet service channels.\n- **Automatic form**: can be contracted at the moment of joining Getnet or later via the Portal, App or other channels – as long as the receivables haven't already been advanced (e.g., via \"Receba Já\" or another modality).\n- With automatic antecipação, all receivables are settled on the **first business day after the request**.\n- You can cancel the automatic antecipação at any time; the cancellation doesn't cover receivables already processed for early payment.\n- Getnet may limit or suspend contracting at any time without prior notice.\n- For operations done in partnership with Banco Santander, values from the first 3 days of your receivables schedule are not considered.\n- You remain responsible for the legitimacy of the sales: in case of chargebacks, cancellations or stornos after the antecipação, you must reimburse Getnet, plus interest of 1% per month and monetary correction by IGPM/FGV, which can be deducted from your receivables or charged another way.\n\n## Rates\n- The antecipação rate is the one **practiced by Getnet on the date of each antecipação**, and it can be consulted in Getnet service channels – the contract does not fix a number (sources: \"Contrato Consolidado – cláusula 18\" PDF; FAQ \"Taxas\"). So the rate can vary.\n- **Antecipação Automática** is a condition for fee/tariff exemption for clients on the \"Receba Conforme suas Vendas\" receiving plan, and it is subject to individual credit approval by Getnet — Getnet decides per contract whether to grant it or not. *(Sources: FAQ \"Taxas\" and FAQ \"Aluguel\")*\n- For group benefits (PAT / voucher transactions), if you anticipate your receivables a different rate applies; for voucher transactions subject to the new November/2025 rule, the MDR is limited to 3.6% and the maximum receivement period is 15 days. *(Source: \"O que é o PAT?\" – site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/)*\n\n## Note\nThe exact percentage is not published in the knowledge base — it varies by offer and is defined at the moment of each operation, so I can't quote a fixed rate for you. I'd recommend checking the current rate in the Getnet App, the Client Portal or the Central de Relacionamento (4002-4000) before contracting."
+          }
+        ]
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "What's the euro exchange rate today?",
+        "user_id": "cliente1988",
+        "expect": [
+          "get_exchange_rate"
+        ]
+      },
+      "reply": {
+        "answer": "Here's the euro exchange rate today (2026-11-09), according to the Banco Central do Brasil (PTAX):\n\n- **Buy rate:** R$ 6.1729\n- **Sell rate:** R$ 6.1741\n- **Quote time:** 2026-11-09, 13:11 (closing bulletin)\n\nRates can vary throughout the day depending on the market. Is there anything else I can help you with — for example, about your Getnet machine, sales or account?\n\nSource: Banco Central do Brasil (PTAX)",
+        "tag": "other",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "get_exchange_rate"
+        ],
+        "sources": [
+          {
+            "title": "Banco Central do Brasil (PTAX)",
+            "url": null
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "masked": [],
+        "fallback": false,
+        "session_id": "5772baa2-00f0-4b3f-bf06-20b10e6cf8f0",
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 7315,
+        "request_id": "f99ab39db0d7",
+        "evidence": [
+          {
+            "tool": "knowledge.get_exchange_rate",
+            "agent": false,
+            "args": {
+              "currency": "EUR"
+            },
+            "result": {
+              "currency": "EUR",
+              "buy_brl": 6.1729,
+              "sell_brl": 6.1741,
+              "quoted_at": "2026-11-09 13:11:19.041465",
+              "bulletin": "Fechamento",
+              "source": "Banco Central do Brasil (PTAX)"
+            }
+          },
+          {
+            "tool": "router.knowledge",
+            "agent": true,
+            "args": {
+              "request": "Euro exchange rate today 2026-11-09"
+            },
+            "result": "The Euro (EUR) exchange rate today (2026-11-09), according to the Banco Central do Brasil (PTAX):\n\n- **Buy rate:** R$ 6.1729\n- **Sell rate:** R$ 6.1741\n- **Quote time:** 2026-11-09, 13:11 (closing bulletin)\n- **Source:** Banco Central do Brasil (PTAX)\n\nNote that rates can vary throughout the day depending on the market."
+          }
+        ]
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "My card machine is showing a transaction decline error.",
+        "user_id": "cliente1988",
+        "expect": [
+          "support"
+        ]
+      },
+      "reply": {
+        "answer": "Your machine (Get Smart, serial GS-0012345) is offline — the 4G signal is down and the last error was a communication failure with the server, which is what's causing the decline. Here's how to fix it:\n\n1. On the home screen, tap **\"Configurar\"** (Settings).\n2. Under **Wi-Fi**, view the available networks and connect to your Wi-Fi.\n3. If needed, manage your connections under **\"Conexões\"** (covers Wi-Fi, the 4G chip and Bluetooth).\n4. Run the **\"Teste de Conexão\"** (connection test) from that menu to confirm the machine is back online.\n\nOnce connected, try the sale again. If it still declines, let me know and I can look at your recent transactions for the exact decline code and reason.\n\nSource: support tool (merchant's account).",
+        "tag": "backoffice",
+        "agents_used": [
+          "knowledge",
+          "support"
+        ],
+        "tools_used": [
+          "get_terminal_status",
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf"
+          },
+          {
+            "title": "Manul-GetSmart.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf"
+          },
+          {
+            "title": "getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/07/getnet_19_06-26_Manul_GetLite_V4-1.pdf"
+          },
+          {
+            "title": "getnet_12_06-26_Manul_GetMini_V2.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetMini_V2.pdf"
+          },
+          {
+            "title": "20180711_926_Super_Manul.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2022/04/20180711_926_Super_Manul.pdf"
+          },
+          {
+            "title": "Manual Maquinas",
+            "url": "https://site.getnet.com.br/boas-vindas/manual-maquinas/"
+          },
+          {
+            "title": "Get Tap",
+            "url": "https://site.getnet.com.br/duvidas/get-tap/"
+          },
+          {
+            "title": "20240215_Termo_ContaGetnet_Autocredencimento.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2024/02/20240215_Termo_ContaGetnet_Autocredencimento.pdf"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "masked": [],
+        "fallback": false,
+        "session_id": "51dc2597-7a65-4878-9d88-e6dbcb7526c0",
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 15797,
+        "request_id": "bc2e7ddd3f0e",
+        "evidence": [
+          {
+            "tool": "support.get_terminal_status",
+            "agent": false,
+            "args": {},
+            "result": {
+              "terminals": [
+                {
+                  "serial": "GS-0012345",
+                  "model": "Get Smart",
+                  "status": "offline",
+                  "connection": "4G",
+                  "signal": "none",
+                  "wifi_configured": false,
+                  "last_seen_hours_ago": 5,
+                  "last_error": "Falha de comunicação com o servidor"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "Get Smart configurar Wi-Fi"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 9 9 Índice« Manual de Uso » Get ClássicaConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em WI-FI ou Suporte. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "Manul-GetSmart.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf",
+                  "text": "## Page 4 Manual Get Smart 4 Índice«Configurações da Get Smart 02 Configurações da Get Smart Sua Get Smart oferece diversas opções de configuração diretamente na própria maquininha. Para acessá-las, basta tocar em “Configurar” na tela inicial. Confira abaixo as funcionalidades disponíveis: Wi-Fi ■ Visualize as redes disponíveis e conecte-se facilmente a uma rede Wi-Fi. Sistema ■ Consulte informações sobre o Auttar (disponível apenas para maquininhas com TEF). ■ Restaure o sistema (função restrita ao suporte técnico, com senha de acesso). Modo Quiosque ■ Ative e configure o Modo Quiosque para personalizar a experiência de uso da maquininha. Conexões ■ Gerencie suas conexões de rede: Wi-Fi, chip 4G e Bluetooth. ■ Consulte o número do chip e o número da maquininha. ■ Verifique o consumo de dados e ative o modo de economia de dados. ■ Realize testes de conectividade por meio da opção “Teste de Conexão” . Brilho da Tela ■ Ajuste o nível de brilho da tela conforme sua preferência. Teste de Hardware Execute uma série de testes para verificar o funcionamento dos componentes da maquininha. Entre os testes disponíveis estão: ■ Touchscreen ■ Conectividade ■ Data e hora ■ Impressão ■ Luzes LED ■ Câmera ■ Mifare ■ NFC ■ Leitor de tarja magnética ■ Leitor de chip ■ E outros"
+                },
+                {
+                  "title": "getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/07/getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+                  "text": "## Page 8 8 Índice« Manual de Uso » Get LiteConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em WI-FI ou Suporte. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetMini_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetMini_V2.pdf",
+                  "text": "## Page 8 8 Índice« Manual de Uso » Get MiniConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em Menu. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "20180711_926_Super_Manul.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2022/04/20180711_926_Super_Manul.pdf",
+                  "text": "## Page 6 DESCONECTAR § Repita os passos 1 e 2 descritos no item “Conectar” § Selecione a rede que deseja desabilitar § Pressione “1. Esquecer Rede Wi-Fi” CONECTAR § Pressione “2-Suporte” § Tecle “3. Wi-Fi” § Digite a senha da rede e aguarde a conexão PARA SUA EMPRESA PARA VOCÊ ATIVE o Wi-Fi BANDEIRAS aceitas Válido para SuperGet com Chip 3G Wi-Fi."
+                },
+                {
+                  "title": "Manual Maquinas",
+                  "url": "https://site.getnet.com.br/boas-vindas/manual-maquinas/",
+                  "text": "# Manual Maquinas Qual a sua máquina? Get Lite Portátil com Chip + Wi-Fi Get Mini Get Clássica Chip de dados + Wi-Fi Get Smart Get Renova Sem Bobina Com Bobina #### Não é cliente? #### Já é cliente?"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "Get Smart manual conexão internet"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "Manul-GetSmart.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2025/09/Manul-GetSmart.pdf",
+                  "text": "## Page 4 Manual Get Smart 4 Índice«Configurações da Get Smart 02 Configurações da Get Smart Sua Get Smart oferece diversas opções de configuração diretamente na própria maquininha. Para acessá-las, basta tocar em “Configurar” na tela inicial. Confira abaixo as funcionalidades disponíveis: Wi-Fi ■ Visualize as redes disponíveis e conecte-se facilmente a uma rede Wi-Fi. Sistema ■ Consulte informações sobre o Auttar (disponível apenas para maquininhas com TEF). ■ Restaure o sistema (função restrita ao suporte técnico, com senha de acesso). Modo Quiosque ■ Ative e configure o Modo Quiosque para personalizar a experiência de uso da maquininha. Conexões ■ Gerencie suas conexões de rede: Wi-Fi, chip 4G e Bluetooth. ■ Consulte o número do chip e o número da maquininha. ■ Verifique o consumo de dados e ative o modo de economia de dados. ■ Realize testes de conectividade por meio da opção “Teste de Conexão” . Brilho da Tela ■ Ajuste o nível de brilho da tela conforme sua preferência. Teste de Hardware Execute uma série de testes para verificar o funcionamento dos componentes da maquininha. Entre os testes disponíveis estão: ■ Touchscreen ■ Conectividade ■ Data e hora ■ Impressão ■ Luzes LED ■ Câmera ■ Mifare ■ NFC ■ Leitor de tarja magnética ■ Leitor de chip ■ E outros"
+                },
+                {
+                  "title": "Get Tap",
+                  "url": "https://site.getnet.com.br/duvidas/get-tap/",
+                  "text": "## É preciso ter acesso a internet para utilizar o Get Tap? Sim, para utilizar o Get Tap é necessário ter conexão com a internet."
+                },
+                {
+                  "title": "getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/06/getnet_12_06-26_Manul_GetClassica_V2.pdf",
+                  "text": "## Page 9 9 Índice« Manual de Uso » Get ClássicaConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em WI-FI ou Suporte. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "Manual Maquinas",
+                  "url": "https://site.getnet.com.br/boas-vindas/manual-maquinas/",
+                  "text": "# Manual Maquinas Qual a sua máquina? Get Lite Portátil com Chip + Wi-Fi Get Mini Get Clássica Chip de dados + Wi-Fi Get Smart Get Renova Sem Bobina Com Bobina #### Não é cliente? #### Já é cliente?"
+                },
+                {
+                  "title": "getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2026/07/getnet_19_06-26_Manul_GetLite_V4-1.pdf",
+                  "text": "## Page 8 8 Índice« Manual de Uso » Get LiteConfigure o wi-fi 6. Como configurar o wi-fi na minha Get? Sua maquininha já vem com um chip 3G sem custo e com plano de dados gratuitos. Contudo, se prefir, é possível configurá-la para usar o Wi-Fi do seu estabelecimento. Passo 1 Passo 4 Passo 2 Passo 5 Passo 3 Pronto! Clique em WI-FI ou Suporte. Selecione sua rede de Wi-Fi. Selecione Habilitar Wi-Fi. Se necessário, insira a senha. Selecione Procurar Redes. A maquininha já está conectada. Caso sua senha contenha letras ou caracteres especiais, você pode incluí-los usando o próprio teclado da maquininha. Cada tecla possui um número e três letras. Para selecionar, aperte e segure a tecla até que apareçam no visor os caracteres ocultos."
+                },
+                {
+                  "title": "20240215_Termo_ContaGetnet_Autocredencimento.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2024/02/20240215_Termo_ContaGetnet_Autocredencimento.pdf",
+                  "text": "## Page 2 Página 2 de 20 TCUGETNET_v1_2024 (máquina de cartão) ou eletronicamente (virtual/“on line”). O Cartão Getnet ficará vinculado a sua conta de pagamento. Para utilizá -lo Você deverá dispor de saldo na Conta. Este instrumento pode ser emitido fisicamente “plástico” ou virtualmente. A critério da Getnet, poderá ser oferecido a Você a forma física e/ou virtual para usufruir dos Serviços contratados. CVV: é o “Card Verification Value ”, ou seja, é o código (número) de segurança que fica no verso d os Cartões. Chargeback: é o procedimento efetuado para contestar/”reclamar” o débito, não reconhecido por Você, em um lançamento efetuado na fatura do seu Cartão. A exemplo, uma compra que foi incluída na fatura do seu Cartão, porém não foi realizada por Você . Uma vez analisado pela Bandeira e sendo aceito/aprovado o Chargeback, o valor contestado será depositado na sua Conta, no prazo determinado pela Bandeira . Canais de Comunicação : são os canais oficiais de comunicação da Getnet , relacionados ao final deste Termo de Uso ou no aplicitativo Getnet ou em nosso site www.getnet.com.br, nos quais Você poderá se comunicar com a Getnet para tratar dos assuntos relacionados aos Serviços contratados por Você. Conta: é a conta de pagamento pré -paga que pode ser utilizada por Você para a execução de transações de pagamento em moeda eletrônica, realização de saques, pagamentos de contas e pagamentos de transações realizadas por cartões de débito ou crédito, realizadas com base em valores em reais previamente aportados. Para sua"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "support.knowledge",
+            "agent": true,
+            "args": {
+              "request": "Get Smart: how to set up Wi-Fi"
+            },
+            "result": "Here's how to set up Wi-Fi on the **Get Smart**, based on the Get Smart manual (Manul-GetSmart.pdf, site.getnet.com.br):\n\n- On the home screen, tap **\"Configurar\"** (Settings).\n- Under **Wi-Fi**, you can view the available networks and connect easily to a Wi-Fi network.\n- You can also manage your network connections under **\"Conexões\"**, which covers Wi-Fi, the 4G chip and Bluetooth — including checking data usage, activating data-saving mode and running a \"Teste de Conexão\" (connection test).\n\nNote: the Get Smart manual describes Wi-Fi setup through the touchscreen \"Configurar\" menu; the step-by-step \"Habilitar Wi-Fi → Procurar Redes → selecionar rede → inserir senha\" flow appears in the manuals for the Get Clássica, Get Lite and Get Mini models.\n\nSources:\n- \"Manual Get Smart\" – Manul-GetSmart.pdf (site.getnet.com.br)\n- \"Manual de Uso – Get Clássica / Get Lite / Get Mini\" (site.getnet.com.br)"
+          },
+          {
+            "tool": "router.support",
+            "agent": true,
+            "args": {
+              "request": "My card machine is showing a transaction decline error. What steps should I take?"
+            },
+            "result": "Here's what's happening and what to do.\n\n**Machine status (Get Smart – serial GS-0012345):**\n- Status: **offline**\n- Connection: 4G (signal: **none**)\n- Last error: communication failure with the server\n\nThe decline is very likely caused by your machine losing connectivity. Since the 4G signal is down, here are the steps from the **Get Smart** manual to set up Wi-Fi and check your connection:\n\n1. On the home screen, tap **\"Configurar\"** (Settings).\n2. Under **Wi-Fi**, view the available networks and connect to your Wi-Fi network.\n3. If needed, manage your connections under **\"Conexões\"**, which covers Wi-Fi, the 4G chip and Bluetooth.\n4. Run the **\"Teste de Conexão\"** (connection test) from that menu to confirm the machine is back online.\n\nOnce the connection is restored, try the sale again. If the decline persists with a message on the card itself, the next step would be to check the specific decline reason — if you'd like, I can look at your recent transactions to see the exact decline code and reason. Just let me know."
+          }
+        ]
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "How many installments can I split a sale into with the crediário?",
+        "user_id": "cliente1988",
+        "expect": [
+          "knowledge"
+        ]
+      },
+      "reply": {
+        "answer": "With **Crediário Getnet**, you can split a sale into **up to 48 installments** — the exact maximum and rates depend on your customer's card-issuing bank.\n\nA few other useful points:\n- You receive the full sale amount in a single payment **within up to 2 business days**, regardless of the number of installments.\n- There is a **single fee of 3.45% per sale**, independent of the number of installments (subject to change — check your rates in the Getnet Portal).\n\nSources: Crediário Getnet manual and FAQ (site.getnet.com.br/duvidas/crediario).",
+        "tag": "banking",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "Folder_Credirio.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2024/09/Folder_Credirio.pdf"
+          },
+          {
+            "title": "Solução TEF",
+            "url": "https://site.getnet.com.br/tef/solucao-tef/"
+          },
+          {
+            "title": "crediário",
+            "url": "https://site.getnet.com.br/duvidas/crediario/"
+          },
+          {
+            "title": "20241223_termos_e_condicoes_conversor_de_moedas.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2025/02/20241223_termos_e_condicoes_conversor_de_moedas.pdf"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "masked": [],
+        "fallback": false,
+        "session_id": "08aaff35-b1a0-4c83-9fb4-e3860e2c67a5",
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 8894,
+        "request_id": "1bcc10dd24af",
+        "evidence": [
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "crediário parcelas quantidade"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "Folder_Credirio.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2024/09/Folder_Credirio.pdf",
+                  "text": "## Page 3 3 Índice« Manual de uso » Crediário Getnet 1. O que é crediário Essa é uma opção de venda que é realizada por meio da maquininha de cartão Getnet que permite que você ofereça aos seus clientes o parcelamento em até 48 vezes. O que é uma venda com crediário? O seu cliente precisa ter limite disponível no cartão de crédito com o valor total da compra. Mas fique tranquilo: as taxas de contratação e a quantidade máxima de parcelas são de acordo com o banco emissor do seu cliente. Imprevistos podem acontecer ao cliente e ter uma opção de pagamento que dê possibilidade de pagar sem prejudicar o bolso é um diferencial."
+                },
+                {
+                  "title": "Solução TEF",
+                  "url": "https://site.getnet.com.br/tef/solucao-tef/",
+                  "text": "### Solução TEF Saiba mais"
+                },
+                {
+                  "title": "Folder_Credirio.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2024/09/Folder_Credirio.pdf",
+                  "text": "## Page 4 4 Índice« Manual de uso » Crediário Getnet 2. Benefícios do crediário para o estabelecimento Benefícios do crediário para o estabelecimento Recebimento do valor da venda de uma vez em até 2 dias úteis, sem necessidade de pedir antecipação. Mais segurança, com a operação sendo feita diretamente entre o banco emissor do cartão e o consumidor. Paga uma taxa única de 3,45% por venda*, independentemente da quantidade de parcelas. Fácil de simular e vender, tudo aprovado na hora direto na maquininha. Maior fidelização dos clientes que optam pelo parcelamento, o que pode gerar um relacionamento de longo prazo. Com o Crediário Getnet você aumenta as vendas, melhora o fluxo de caixa e oferece mais comodidade aos seus clientes. *Sujeito a alteração, consulte suas taxas no Portal Getnet."
+                },
+                {
+                  "title": "Solução TEF",
+                  "url": "https://site.getnet.com.br/tef/solucao-tef/",
+                  "text": "## Peça a Solução TEF!"
+                },
+                {
+                  "title": "crediário",
+                  "url": "https://site.getnet.com.br/duvidas/crediario/",
+                  "text": "## Onde visualizo o pagamento e em que prazo eu recebo? As informações de pagamento podem ser consultadas no Aplicativo Getnet (Vendas) e/ou no Portal do Cliente. Todas as vendas realizadas na modalidade Crediário são pagas em até 2 dias úteis após a captura da transação, de uma única vez, independente da quantidade de parcelas escolhida pelo portador. Lembrando que do valor da transação original é subtraído o valor da taxa de desconto."
+                },
+                {
+                  "title": "20241223_termos_e_condicoes_conversor_de_moedas.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2025/02/20241223_termos_e_condicoes_conversor_de_moedas.pdf",
+                  "text": "Adquirência Getnet. aa) Valor Líquido: valor a ser creditado a Você, calculado sobre o Valor Bruto, do qual são deduzidas: a Taxa de Desconto, Tarifas, valores e custos de Chargebacks, taxa de antecipação, no caso de contratação de AR e/ou deduções, e outros valores previstos no Contrato de Credenciamento, Anexos ou em outros instrumentos. Na Getnet, por meio do Conversor Getnet, e desde que cumpridas as condições previstas nestes Termos e Condições e no Contrato de Credenciamento , Você pode rá oferecer ao Usuário Pagador Estrangeiro a opção de pagamento na Moeda Estrangeira do país de origem do Portador do cartão. C ontudo, Você receberá a liquidação do valor da Transação em Real brasileiro. Considerando a Habilitação Massiva da Solução, o Cliente declara estar ciente e de acordo que o seu Aceite aos Termos e Condições do Conversor Getnet será concretizado quando o Cliente realizar a primeira Transação utilizando a Solução. Neste sentido, a partir do Aceite, o Cliente declara: (i) ter lido e aceito integralmente e sem reservas todas as cláusulas e obrigações destes Termos e Condições, sem prejuízo de qualquer outro acordo celebrado com a Getnet, incluindo o Contrato de Credenciamento; e (ii) que possui maioridade legal para celebrar este instrumento ou, em caso de Pessoas Jurídicas, que possui poderes de representação legal."
+                }
+              ]
+            }
+          },
+          {
+            "tool": "router.knowledge",
+            "agent": true,
+            "args": {
+              "request": "How many installments can a sale be split into with crediário?"
+            },
+            "result": "With **Crediário Getnet**, a sale can be split into **up to 48 installments (parcelas)** — the maximum number of installments and the contracting rates depend on your customer's card-issuing bank.\n\nOther relevant facts from the knowledge base:\n- The merchant receives the full sale amount in a single payment **within up to 2 business days**, regardless of the number of installments chosen.\n- There is a **single fee of 3.45% per sale**, independent of the number of installments (subject to change — check your rates in the Getnet Portal).\n\nSources: \"Folder_Credirio.pdf\" (Crediário Getnet manual) and \"Crediário\" (Getnet FAQ, site.getnet.com.br/duvidas/crediario)."
+          }
+        ]
+      },
+      "failed": []
+    },
+    {
+      "case": {
+        "message": "Can I sell through WhatsApp using the Payment Link?",
+        "user_id": "cliente1988",
+        "expect": [
+          "knowledge"
+        ]
+      },
+      "reply": {
+        "answer": "Yes, you can sell through WhatsApp using the Getnet Payment Link (Link de Pagamento). 🚀\n\n**How it works:**\n1. You send the Payment Link to your customers via WhatsApp, email, SMS or social media.\n2. They click it, choose the payment method and complete the purchase.\n\n**What’s included:**\n- No additional cost in all e-commerce packages (including recorrência and loja virtual packages).\n- Available for both individuals (PF) and companies (PJ), atacado and varejo.\n- Activation on the same day.\n- Accepted payment methods: credit card, debit, QR Code and Pix — you can also let the buyer choose between debit, credit, Pix, Wallet and boleto.\n- You can add several products to the same cart, personalize the link with product images, include shipping charges, and it comes with Getnet’s Antifraude security.\n\nNote: rates and prices may vary with the offer.\n\nSources:\n- site.getnet.com.br/duvidas/link-de-pagamento/\n- site.getnet.com.br/link-de-pagamento/",
+        "tag": "other",
+        "agents_used": [
+          "knowledge"
+        ],
+        "tools_used": [
+          "search_kb"
+        ],
+        "sources": [
+          {
+            "title": "Getnet | Link de Pagamento: venda mais online",
+            "url": "https://site.getnet.com.br/link-de-pagamento/"
+          },
+          {
+            "title": "pd_recorrenci_essencil.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2022/05/pd_recorrenci_essencil.pdf"
+          },
+          {
+            "title": "Link de pagamento",
+            "url": "https://site.getnet.com.br/duvidas/link-de-pagamento/"
+          },
+          {
+            "title": "pd_recorrenci_flexivel.pdf",
+            "url": "https://site.getnet.com.br/wp-content/uploads/2022/05/pd_recorrenci_flexivel.pdf"
+          },
+          {
+            "title": "Getnet | Maquininha no celular: Receba pelo celular- Getnet",
+            "url": "https://site.getnet.com.br/get-tap/"
+          }
+        ],
+        "handoff": false,
+        "ticket": null,
+        "masked": [],
+        "fallback": false,
+        "session_id": "8457e688-1ea4-41cb-845f-7149bdd4d205",
+        "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+        "latency_ms": 9394,
+        "request_id": "3e2cbe5603dc",
+        "evidence": [
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "link de pagamento WhatsApp vender"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "Getnet | Link de Pagamento: venda mais online",
+                  "url": "https://site.getnet.com.br/link-de-pagamento/",
+                  "text": "## Benefícios para você vender mais com Link de Pagamento na Black Friday Novo Expanda seu negócio Venda para estrangeiros com documento de identificação (RNE) no pagamento Venda de onde estiver Faça vendas usando o WhatsApp ou sua rede social Link completo Insira diversos produtos no mesmo carrinho Personalizável Personalize o link com a imagem do produto Segurança Conte com a segurança do Antifraude da Getnet Cliente livre Você pode optar por deixar seu comprador escolher entre débito, crédito, Pix, Wallet e boleto Mais opções de venda Com o Link de Pagamento inicial você pode vender também através do aplicativo com o antifraude da Getnet Frete Opção de inclusão do valor de frete de cobrança"
+                },
+                {
+                  "title": "pd_recorrenci_essencil.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2022/05/pd_recorrenci_essencil.pdf",
+                  "text": "seu negócio. Geração do Link de Pagamento para vender pelo WhatsApp, e-mail, sms ou Redes Sociais: incluso no pacote SEM CUSTO ADICIONAL. Motor de Recorrência 0 Agendamento das cobranças/parcelas, retentativa inteligente das cobranças, painel de gestão das cobranças. Sem limite de planos de mensalidade cadastrados. Obs: motor da recorrência disponível somente para cartão de credito. GRATUITO GRATUITO GRATUITO"
+                },
+                {
+                  "title": "Link de pagamento",
+                  "url": "https://site.getnet.com.br/duvidas/link-de-pagamento/",
+                  "text": "## Como o Link de Pagamento pode ser enviado? O vendedor pode enviar o Link de Pagamento para seus clientes por redes sociais, WhatsApp, email e SMS. O cliente clica no link, escolhe o método de pagamento e finaliza a compra."
+                },
+                {
+                  "title": "pd_recorrenci_flexivel.pdf",
+                  "url": "https://site.getnet.com.br/wp-content/uploads/2022/05/pd_recorrenci_flexivel.pdf",
+                  "text": "seu negócio. Geração do Link de Pagamento para vender pelo WhatsApp, e-mail, sms ou Redes Sociais: incluso no pacote SEM CUSTO ADICIONAL. Motor de Recorrência Flexível 0 Agendamento das cobranças/parcelas, retentativa inteligente das cobranças, painel de gestão das cobranças. Sem limite de planos de mensalidade cadastrados. Obs: motor da recorrência disponível somente para cartão de credito. GRATUITO GRATUITO GRATUITO O QUE ESSE MOTOR OFERECE A MAIS? . Alteração de data e valor para uma ou mais parcelas futuras; . Escolha da data de vencimento da primeira cobrança; . Degustação - trial - ou valor de entrada; . Migração de plano."
+                },
+                {
+                  "title": "Getnet | Link de Pagamento: venda mais online",
+                  "url": "https://site.getnet.com.br/link-de-pagamento/",
+                  "text": "## Veja como é fácil vender com o Link de Pagamento 1"
+                },
+                {
+                  "title": "Getnet | Maquininha no celular: Receba pelo celular- Getnet",
+                  "url": "https://site.getnet.com.br/get-tap/",
+                  "text": "## Venda mais na Black Friday Já é cliente Getnet? Clique aqui e saiba como começar a vender com Get Tap. Maquininhas Link de pagamento Get Tap WhatsApp"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "knowledge.search_kb",
+            "agent": false,
+            "args": {
+              "query": "link de pagamento como funciona"
+            },
+            "result": {
+              "results": [
+                {
+                  "title": "Link de pagamento",
+                  "url": "https://site.getnet.com.br/duvidas/link-de-pagamento/",
+                  "text": "## Como o Link de Pagamento pode ser enviado? O vendedor pode enviar o Link de Pagamento para seus clientes por redes sociais, WhatsApp, email e SMS. O cliente clica no link, escolhe o método de pagamento e finaliza a compra."
+                },
+                {
+                  "title": "Link de pagamento",
+                  "url": "https://site.getnet.com.br/duvidas/link-de-pagamento/",
+                  "text": "## Qual o SLA de atendimento para habilitação do Link de Pagamento? A habilitação ocorre no mesmo dia."
+                },
+                {
+                  "title": "Link de pagamento",
+                  "url": "https://site.getnet.com.br/duvidas/link-de-pagamento/",
+                  "text": "## O cliente já tem os pacotes recorrência ou loja virtual. Como ele pode usar o Link de pagamento? Todos os pacotes do e-commerce dão direito ao uso do link de Pagamento."
+                },
+                {
+                  "title": "Link de pagamento",
+                  "url": "https://site.getnet.com.br/duvidas/link-de-pagamento/",
+                  "text": "## Quais lojistas podem ter Link de Pagamento? Tanto atacado quanto varejo podem ter Link de Pagamento."
+                },
+                {
+                  "title": "Link de pagamento",
+                  "url": "https://site.getnet.com.br/duvidas/link-de-pagamento/",
+                  "text": "## Quais são as formas de pagamento que o Link de Pagamento aceita? Cartão de crédito, débito, QR Code e Pix."
+                },
+                {
+                  "title": "Link de pagamento",
+                  "url": "https://site.getnet.com.br/duvidas/link-de-pagamento/",
+                  "text": "## Apenas clientes pessoas jurídicas podem usar Link de Pagamento? Não. O Link de Pagamento pode ser usado por pessoas físicas e Jurídicas"
+                }
+              ]
+            }
+          },
+          {
+            "tool": "router.knowledge",
+            "agent": true,
+            "args": {
+              "request": "Sell through WhatsApp using Getnet Payment Link / link de pagamento"
+            },
+            "result": "Here's what the Getnet knowledge base says about selling through WhatsApp with the Payment Link (Link de Pagamento):\n\n**How it works**\n- The seller can send the Payment Link to customers via social media, **WhatsApp**, email and SMS. The customer clicks the link, chooses the payment method and completes the purchase. — *\"Link de pagamento\" FAQ (site.getnet.com.br/duvidas/link-de-pagamento/)*\n- It lets you sell from anywhere, using WhatsApp or your social network. — *Getnet | Link de Pagamento page (site.getnet.com.br/link-de-pagamento/)*\n\n**Payment methods accepted**\n- Credit card, debit, QR Code and Pix. You can also choose to let the buyer pick between debit, credit, Pix, Wallet and boleto. — *Link de Pagamento FAQ*\n\n**Who can use it**\n- Both wholesale (atacado) and retail (varejo) merchants can have it.\n- It can be used by both individuals (pessoas físicas) and legal entities (pessoas jurídicas).\n- All e-commerce packages (including the recorrência and loja virtual packages) include the right to use the Payment Link — generating links to sell via WhatsApp, email, SMS or social networks is included **at no additional cost** in those packages. — *pd_recorrenci_essencil.pdf / pd_recorrenci_flexivel.pdf*\n- Activation (habilitação) happens on the same day.\n\n**Other features**\n- You can add several products to the same cart, personalize the link with the product image, include shipping (frete) charges, and it comes with Getnet's Antifraude security. — *Getnet | Link de Pagamento page*\n\nNote: rates and prices can vary with the offer. If you'd like, I can look up how to generate the link step by step in the app or portal."
+          }
+        ]
+      },
+      "failed": []
+    }
+  ]
+}

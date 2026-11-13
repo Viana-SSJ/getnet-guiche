@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img"
+  aria-label="Passed dev cases against the cost per message, one point per model">
+<style>
+  .bg { fill: #fcfcfb } .grid { stroke: #e4e3df; stroke-width: 1 } .axis { fill: #52514e; font: 12px sans-serif }
+  .title { fill: #0b0b0b; font: 600 14px sans-serif } .label { fill: #0b0b0b; font: 12px sans-serif }
+  .dot { fill: #2a78d6; stroke: #fcfcfb; stroke-width: 2 } .front { fill: none; stroke: #52514e; stroke-width: 2; stroke-dasharray: 5 4 }
+  @media (prefers-color-scheme: dark) {
+    .bg { fill: #1a1a19 } .grid { stroke: #3a3a37 } .axis { fill: #c3c2b7 } .title, .label { fill: #f0efec }
+    .dot { fill: #3987e5; stroke: #1a1a19 } .front { stroke: #c3c2b7 }
+  }
+</style>
+<rect class="bg" width="640" height="360"/>
+<text class="title" x="70" y="22">Dev set passed vs cost per message (dashed: the Pareto front)</text>
+<line class="grid" x1="70" x2="610" y1="300.0" y2="300.0"/><text class="axis" x="62" y="304.0" text-anchor="end">75%</text><line class="grid" x1="70" x2="610" y1="248.0" y2="248.0"/><text class="axis" x="62" y="252.0" text-anchor="end">80%</text><line class="grid" x1="70" x2="610" y1="196.0" y2="196.0"/><text class="axis" x="62" y="200.0" text-anchor="end">85%</text><line class="grid" x1="70" x2="610" y1="144.0" y2="144.0"/><text class="axis" x="62" y="148.0" text-anchor="end">90%</text><line class="grid" x1="70" x2="610" y1="92.0" y2="92.0"/><text class="axis" x="62" y="96.0" text-anchor="end">95%</text><line class="grid" x1="70" x2="610" y1="40.0" y2="40.0"/><text class="axis" x="62" y="44.0" text-anchor="end">100%</text><text class="axis" x="70.0" y="318" text-anchor="middle">$0.0006</text><text class="axis" x="178.0" y="318" text-anchor="middle">$0.0007</text><text class="axis" x="286.0" y="318" text-anchor="middle">$0.0008</text><text class="axis" x="394.0" y="318" text-anchor="middle">$0.0009</text><text class="axis" x="502.0" y="318" text-anchor="middle">$0.0010</text><text class="axis" x="610.0" y="318" text-anchor="middle">$0.0011</text><polyline class="front" points="242.8,144.0 480.4,92.0"/><circle class="dot" cx="480.4" cy="92.0" r="6"/><text class="label" x="480.4" y="78.0" text-anchor="end">deepseek-v4-flash-0731 · 38/40 · p95 30 s</text><circle class="dot" cx="310.3" cy="196.0" r="6"/><text class="label" x="310.3" y="220.0" text-anchor="start">gpt-oss-120b · 34/40 · p95 27 s</text><circle class="dot" cx="242.8" cy="144.0" r="6"/><text class="label" x="242.8" y="168.0" text-anchor="start">qwen3.7-flash · 36/40 · p95 117 s</text>
+<text class="axis" x="340.0" y="344" text-anchor="middle">US$ per message (measured)</text>
+</svg>

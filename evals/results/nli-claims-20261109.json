@@ -1,0 +1,69 @@
+{
+  "model": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+  "code": "evals/claims.py at commit 4649adb",
+  "runs": {
+    "dev-20261109-162610": {
+      "auc": 0.755,
+      "ci95": [
+        0.49,
+        1
+      ],
+      "faithful": 29,
+      "unfaithful": 5,
+      "at 0.1": {
+        "caught_unfaithful": "5/5",
+        "false_alarms": "18/29"
+      },
+      "at 0.3": {
+        "caught_unfaithful": "5/5",
+        "false_alarms": "20/29"
+      },
+      "at 0.5": {
+        "caught_unfaithful": "5/5",
+        "false_alarms": "21/29"
+      }
+    },
+    "ablation-baseline-20261109-221337": {
+      "auc": 0.608,
+      "ci95": [
+        0.24,
+        0.98
+      ],
+      "faithful": 17,
+      "unfaithful": 3,
+      "at 0.1": {
+        "caught_unfaithful": "3/3",
+        "false_alarms": "7/17"
+      },
+      "at 0.3": {
+        "caught_unfaithful": "3/3",
+        "false_alarms": "7/17"
+      },
+      "at 0.5": {
+        "caught_unfaithful": "3/3",
+        "false_alarms": "7/17"
+      }
+    },
+    "final-20261109-162928": {
+      "auc": 0.564,
+      "ci95": [
+        0.28,
+        0.85
+      ],
+      "faithful": 10,
+      "unfaithful": 7,
+      "at 0.1": {
+        "caught_unfaithful": "6/7",
+        "false_alarms": "9/10"
+      },
+      "at 0.3": {
+        "caught_unfaithful": "7/7",
+        "false_alarms": "10/10"
+      },
+      "at 0.5": {
+        "caught_unfaithful": "7/7",
+        "false_alarms": "10/10"
+      }
+    }
+  }
+}
