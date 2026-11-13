@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Lint and offline tests
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.1
+        with:
+          version: "0.12.23"
+      - run: uv sync --locked
+      - run: uv run ruff check .
+      - run: uv run pytest -q
+
+  image:
+    name: Docker image
+    needs: test
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - run: docker build -t getnet-agents .
+      - name: The API starts and answers /health
+        run: |
+          docker run -d --name api -p 8000:8000 getnet-agents
+          for i in $(seq 30); do curl -sf http://127.0.0.1:8000/health && exit 0; sleep 2; done
+          docker logs api; exit 1
+
+  eval:
+    name: Dev set with the real model
+    needs: test
+    runs-on: ubuntu-24.04
+    # A change to a prompt, an agent, a tool or the model can change the answers.
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 2
+      - name: Find changes to the agents or the evaluation
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = workflow_dispatch ] || git diff --name-only HEAD~1 HEAD | grep -qE '^(agents/|evals/|pyproject.toml|uv.lock)'; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: astral-sh/setup-uv@v10.3.1
+        if: steps.changed.outputs.run == 'true'
+        with:
+          version: "0.12.23"
+      - name: Run the dev set
+        id: eval
+        if: steps.changed.outputs.run == 'true'
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          if [ -z "$OPENROUTER_API_KEY" ]; then echo "No OPENROUTER_API_KEY secret: skip."; exit 0; fi
+          uv sync --locked
+          echo "ran=true" >> "$GITHUB_OUTPUT"
+          uv run python -m evals.run evals/dev.jsonl --min-pass 0.9
+      - uses: actions/upload-artifact@v7.0.2
+        if: always() && steps.eval.outputs.ran == 'true'
+        with:
+          name: dev-results
+          path: evals/results/dev-*.json
