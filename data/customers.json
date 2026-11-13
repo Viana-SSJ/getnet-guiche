@@ -1,0 +1,43 @@
+{
+  "cliente1988": {
+    "token_sha256": "047bf866877cf1a573228b52f41de7467b3c84a859865d95ff77237dbd00e22d",
+    "name": "Padaria Bom Pão",
+    "plan": "Get Smart",
+    "account": "Get Conta",
+    "rates": { "debit": 1.69, "credit": 2.69, "pix": 0.0 },
+    "terminals": [
+      {
+        "serial": "GS-0012345",
+        "model": "Get Smart",
+        "status": "offline",
+        "connection": "4G",
+        "signal": "none",
+        "wifi_configured": false,
+        "last_seen_hours_ago": 5,
+        "last_error": "Falha de comunicação com o servidor"
+      }
+    ],
+    "transactions": [
+      { "id": "T1001", "day_offset": -1, "time": "08:41", "amount": 45.9, "method": "debit", "brand": "Visa", "status": "approved" },
+      { "id": "T1002", "day_offset": -1, "time": "10:15", "amount": 120.0, "method": "credit", "installments": 1, "brand": "Mastercard", "status": "approved" },
+      { "id": "T1003", "day_offset": -1, "time": "12:02", "amount": 300.0, "method": "credit", "installments": 3, "brand": "Elo", "status": "approved" },
+      { "id": "T1004", "day_offset": -1, "time": "15:30", "amount": 32.5, "method": "pix", "status": "approved" },
+      { "id": "T1005", "day_offset": -1, "time": "17:48", "amount": 210.0, "method": "credit", "installments": 1, "brand": "Visa", "status": "declined", "code": "51", "reason": "Saldo ou limite insuficiente no cartão" },
+      { "id": "T1006", "day_offset": 0, "time": "07:55", "amount": 18.0, "method": "debit", "brand": "Mastercard", "status": "declined", "code": "05", "reason": "Transação não autorizada pelo banco emissor" },
+      { "id": "T1007", "day_offset": -2, "time": "11:20", "amount": 89.9, "method": "debit", "brand": "Elo", "status": "approved" }
+    ]
+  },
+  "cliente2000": {
+    "token_sha256": "f30db0fd8bafaaef3806d533163c953e0191671303552042cfe8064f1fa23286",
+    "name": "Loja Exemplo",
+    "plan": "Get Mini",
+    "account": "Get Conta",
+    "rates": { "debit": 1.99, "credit": 3.19, "pix": 0.0 },
+    "terminals": [
+      { "serial": "GM-0099999", "model": "Get Mini", "status": "online", "connection": "Wi-Fi", "signal": "good", "wifi_configured": true, "last_seen_hours_ago": 0, "last_error": null }
+    ],
+    "transactions": [
+      { "id": "T9001", "day_offset": -1, "time": "09:00", "amount": 9999.0, "method": "credit", "installments": 1, "brand": "Visa", "status": "approved" }
+    ]
+  }
+}
