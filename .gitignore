@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Vector index, rebuilt from kb/ at start
+.index/
+
+# Secrets
+.env
+
+.adk/
+
+# Sessions and tickets (SQLite)
+var/

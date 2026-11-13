@@ -1,0 +1,50 @@
+[project]
+name = "getnet-support"
+version = "0.1.0"
+description = "Multi-agent support service for Getnet merchants, built with Google ADK."
+readme = "README.md"
+authors = [
+    { name = "Arthur Viana Silva", email = "arthurviana00546@gmail.com" }
+]
+requires-python = "==3.12.*"
+dependencies = [
+    # Agents and API
+    "google-adk==2.13.0",
+    "litellm==1.108.1",
+    "mcp==2.3.0",  # LiteLLM imports it on every tool call; it is not in LiteLLM's own dependencies
+    "fastapi==0.162.0",
+    "uvicorn==0.54.0",
+    "pydantic==2.14.3",
+    "python-dotenv==1.2.4",
+    # Observability: ADK exports traces, metrics and logs over OTLP when OTEL_EXPORTER_OTLP_ENDPOINT is set
+    "opentelemetry-api==1.44.0",
+    "opentelemetry-exporter-otlp-proto-http==1.44.0",
+    # Knowledge base search
+    "bm25s==0.3.16",
+    "pystemmer==3.1.0",
+    "fastembed==0.9.1",
+    "numpy==2.5.4",
+    # Web tools
+    "httpx==0.28.1",
+    "ddgs==9.16.1",
+    "sqlalchemy[asyncio]==2.0.44",
+    "aiosqlite==0.22.1",
+    "asyncpg==0.31.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.2.0",
+    "opentelemetry-sdk==1.44.0",
+    "ruff==0.15.2",
+    "pyarrow==26.0.1",  # evals/injection.py reads the public sets
+]
+# Only for `make ingest` (crawl the Getnet site). Not in the Docker image.
+ingest = ["beautifulsoup4==4.15.0", "markdownify==1.2.3", "pypdf==7.0.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.uv]
+package = false
+default-groups = ["dev", "ingest"]

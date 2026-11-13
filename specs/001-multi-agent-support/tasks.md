@@ -3,7 +3,7 @@
 Each task names the requirements it serves.
 
 - [x] T1 Write the spec: requirements, design and tasks (all).
-- [ ] T2 Set up the project with uv and exact library versions (R10).
+- [x] T2 Set up the project with uv and exact library versions (R10).
 - [ ] T3 Crawl the Getnet site into the Markdown knowledge base `kb/` (R12).
 - [ ] T4 Tools: hybrid knowledge-base search, account tools over mock data, weather, exchange rates, web search, a ticket queue in the database, with webhooks; the masks of sensitive data (R2, R3, R4, R5, R6).
 - [ ] T5 Agents in one ADK workflow: guard with the conversation so far, router, knowledge, support, brief, reply, the evidence of each message with a tool call limit for each agent, and the tag plugin with one decision call for the tag and P(injection) (R1, R6, R7, R8, R9, R13).
